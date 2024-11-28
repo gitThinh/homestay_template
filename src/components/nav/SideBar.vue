@@ -2,7 +2,7 @@
   <div class="">
     <HeadlessPopover v-slot="{ open }" class="relative">
       <HeadlessPopoverButton
-        class="outline-none"
+        class="outline-none btn_nude p-1 rounded-full"
       >
         <NuxtIcon name="tabler:menu-3" class="w-8 h-8 block text-neutral-50"/>
       </HeadlessPopoverButton>

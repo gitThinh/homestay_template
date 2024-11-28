@@ -34,7 +34,7 @@
       <!-- user login mobile -->
       <div class="block md:hidden">
         <!-- redirect to login page -->
-        <button class="p-1 rounded-full hover:bg-neutral-100">
+        <button class="p-1 rounded-full btn_nude">
           <NuxtIcon name="la:user-solid" class="w-8 h-8 block text-neutral-50" />
         </button>
       </div>
