@@ -4,21 +4,20 @@
       <HeadlessPopoverButton
         class="outline-none"
       >
-        <NuxtIcon name="tabler:menu-3" class="w-8 h-8 block bg-black"/>
+        <NuxtIcon name="tabler:menu-3" class="w-8 h-8 block text-neutral-50"/>
       </HeadlessPopoverButton>
 
       <HeadlessTransitionRoot
-        enter-active-class="transition duration-1000 ease-out"
-        enter-from-class="-translate-x-[2/3] opacity-0"
-        enter-to-class="translate-x-0 opacity-100"
-        leave-active-class="transition duration-1000 ease-in"
-        leave-from-class="translate-x-0 opacity-100"
-        leave-to-class="-translate-x-[1/2] opacity-0"
-      >
-        <HeadlessPopoverPanel
-          class="fixed top-0 left-0 bottom-0 z-10 w-3/4 transform"
+        as="div"
+        class="fixed top-0 left-0 bottom-0 z-10 w-3/4"
+        enter="transition duration-800 ease-out"
+        enter-from="-translate-x-full opacity-30"
+        enter-to="translate-x-0 opacity-100"
+        leave="transition duration-800 ease-in"
+        leave-from="translate-x-0 opacity-100"
+        leave-to="-translate-x-full opacity-30"
         >
-          <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
+        <HeadlessPopoverPanel class="h-full rounded-e-lg overflow-hidden bg-neutral-50 shadow-lg ring-1 ring-black/5">
             <div class="bg-gray-50 p-4">
               <a
                 href="##"
@@ -34,7 +33,6 @@
                 </span>
               </a>
             </div>
-          </div>
         </HeadlessPopoverPanel>
       </HeadlessTransitionRoot>
     </HeadlessPopover>
