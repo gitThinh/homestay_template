@@ -1,6 +1,6 @@
 <template>
   <button
-    class="px-4 py-2 rounded-lg border bg-neutral-50 hover:bg-neutral-100"
+    class="px-4 py-2 rounded-lg shadow-sm bg-neutral-50 hover:bg-neutral-100 transition-colors"
     v-bind="$attrs"
     @click="$emit('clickBtn', $event)"
   >
