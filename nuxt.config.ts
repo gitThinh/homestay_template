@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/eslint',
     'nuxt-headlessui',
+    'nuxt-swiper',
   ],
 
   // nuxt icon config

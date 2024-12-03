@@ -1,7 +1,7 @@
 <template>
-  <div class="fixed top-0 w-full transition-all" :class="isScrolled ? 'bg-neutral-700 bg-opacity-80 shadow-sm' : 'bg-transparent'">
+  <div class="fixed z-50 top-0 w-full transition-all" :class="isScrolled ? 'bg-primary-800 bg-opacity-90 shadow-sm' : 'bg-transparent'">
     <div
-      class="flex items-center justify-between p-3 lg:px-10 lg:py-5 container"
+      class="flex items-center justify-between p-3 lg:px-10 lg:py-5 main_container"
     >
       <div class="space-x-3 hidden md:block">
         <!-- logo desktop -->
@@ -50,6 +50,7 @@ const handleScroll = () => {
 
 // Attach and detach scroll listener
 onMounted(() => {
+  handleScroll();
   window.addEventListener("scroll", handleScroll);
 });
 onUnmounted(() => {
