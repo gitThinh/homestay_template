@@ -5,7 +5,7 @@
     >
       <h1 class="text-5xl font-bold">Đăng nhập</h1>
       <div class="max-w-sm w-full">
-        <form class="w-full space-y-6">
+        <form class="w-full space-y-4">
           <label class="block">
             <span>Email</span>
             <CommonInput label="Email" placeholder="example@gmail.com" />

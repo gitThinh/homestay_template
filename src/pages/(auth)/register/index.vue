@@ -5,7 +5,7 @@
     >
       <h1 class="text-5xl font-bold">Đăng ký</h1>
       <div class="max-w-sm w-full">
-        <form action="#"  class="w-full space-y-6">
+        <form action="#"  class="w-full space-y-4">
           <label class="block">
             <span>Họ và tên</span>
             <CommonInput placeholder="Họ và tên" />
