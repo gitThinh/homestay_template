@@ -1,5 +1,9 @@
 export const PATH_PAGE = {
-    root: "/",
+    root: "/"
+}
+
+export const PATH_AUTH = {
     login: "/login",
-    register: "/register"
+    register: "/register",
+    forgot: "forgot-pass"
 }
