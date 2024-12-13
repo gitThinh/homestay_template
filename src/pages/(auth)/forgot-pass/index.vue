@@ -3,35 +3,24 @@
     <div
       class="min-h-screen flex flex-col items-center justify-center py-24 space-y-10"
     >
-      <h1 class="text-5xl font-bold">Đăng nhập</h1>
+      <h1 class="text-5xl font-bold">Quên mật khẩu</h1>
       <div class="max-w-sm w-full">
         <form class="w-full space-y-4">
           <label class="block">
             <span>Email</span>
             <CommonInput label="Email" placeholder="example@gmail.com" />
           </label>
-          <label class="block">
-            <span class="flex flex-row items-center justify-between">
-              Mật khẩu
-              <NuxtLinkLocale
-                :to="PATH_AUTH.forgot"
-                class="underline font-medium text-sm hover:no-underline"
-                >Quên mật khẩu?
-              </NuxtLinkLocale>
-            </span>
-            <CommonInput label="Email" type="password" />
-          </label>
           <CommonButtonPrimary @click.prevent="">
-            <p class="text-lg font-semibold text-neutral-50">Đăng nhập</p>
+            <p class="text-lg font-semibold text-neutral-50">Quên mật khẩu</p>
           </CommonButtonPrimary>
         </form>
       </div>
       <span class="text-center">
-        Bạn chưa có tài khoản?
+        Bạn đã có tài khoản?
         <NuxtLinkLocale
-          :to="PATH_AUTH.register"
+          :to="PATH_AUTH.login"
           class="underline hover:no-underline font-medium"
-          >Tạo tài khoản</NuxtLinkLocale
+          >Đăng nhập</NuxtLinkLocale
         >
       </span>
     </div>

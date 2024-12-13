@@ -24,13 +24,13 @@
         <!-- redirect to signUp page -->
         <CommonButton
           class="!rounded-full font-semibold shadow-md"
-          :href="PATH_PAGE.register"
+          :href="PATH_AUTH.register"
           >Sign Up</CommonButton
         >
         <!-- redirect to login page -->
         <CommonButton
           class="!rounded-full font-semibold shadow-md"
-          :href="PATH_PAGE.login"
+          :href="PATH_AUTH.login"
           >Log In</CommonButton
         >
       </div>
@@ -38,7 +38,7 @@
       <!-- user login mobile -->
       <div class="block md:hidden">
         <!-- redirect to login page -->
-        <NuxtLinkLocale :to="PATH_PAGE.login" class="block p-1 rounded-full btn_nude">
+        <NuxtLinkLocale :to="PATH_AUTH.login" class="block p-1 rounded-full btn_nude">
           <NuxtIcon name="la:user-solid" class="w-8 h-8 block text-neutral-50" />
         </NuxtLinkLocale>
       </div>
@@ -47,7 +47,7 @@
 </template>
 
 <script lang="ts" setup>
-import { PATH_PAGE } from '~/constants/path';
+import { PATH_AUTH, PATH_PAGE } from '~/constants/path';
 
 const isScrolled = ref(false);
 const handleScroll = () => {

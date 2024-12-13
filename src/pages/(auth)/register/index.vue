@@ -5,7 +5,7 @@
     >
       <h1 class="text-5xl font-bold">Đăng ký</h1>
       <div class="max-w-sm w-full">
-        <form action="#"  class="w-full space-y-6">
+        <form action="#"  class="w-full space-y-4">
           <label class="block">
             <span>Họ và tên</span>
             <CommonInput placeholder="Họ và tên" />
@@ -34,7 +34,7 @@
       <span class="text-center">
         Bạn đã có tài khoản?
         <NuxtLinkLocale
-          :to="PATH_PAGE.login"
+          :to="PATH_AUTH.login"
           class="underline hover:no-underline font-medium"
           >Đăng nhập</NuxtLinkLocale
         >
@@ -44,5 +44,6 @@
 </template>
 
 <script lang="ts" setup>
-import { PATH_PAGE } from '~/constants/path';
+import { PATH_AUTH } from '~/constants/path';
+
 </script>
