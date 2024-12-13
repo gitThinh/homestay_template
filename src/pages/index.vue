@@ -1,9 +1,9 @@
 <template>
   <NuxtLayout name="default-layout">
     <!-- header page -->
-    <div class="min-h-screen w-full bg_main_image">
+    <div class="min-h-dvh w-full bg_main_image">
       <div
-        class="main_container h-screen flex flex-col justify-center items-center text-neutral-50 space-y-8"
+        class="main_container h-dvh flex flex-col justify-center items-center text-neutral-50 space-y-8"
       >
         <h1
           class="text-4xl sm:text-6xl lg:text-7xl font-bold text-center w-4/5"

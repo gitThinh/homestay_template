@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout name="white-layout">
     <div
-      class="min-h-screen flex flex-col items-center justify-center py-24 space-y-10"
+      class="min-h-dvh flex flex-col items-center justify-center py-24 space-y-10"
     >
       <h1 class="text-5xl font-bold">Đăng ký</h1>
       <div class="max-w-sm w-full">
