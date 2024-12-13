@@ -30,18 +30,18 @@
         </div>
       </div>
     </div>
-    <!-- section popular location -->
-    <div>
-      <CommonSectionWrap title="Popular location" seeMore="#">
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <CommonHomestayCard :card_data="data" v-for="data in CARD_DATA"/>
-        </div>
-      </CommonSectionWrap>
-    </div>
+    <!-- section slider popular location -->
+    <CommonSectionWrap title="Popular location">
+      <div>
+       <SliderHomeStayCard :slidesData="CARD_DATA" />
+      </div>
+    </CommonSectionWrap>
+    
     <!-- section things to do -->
      <div class="bg-primary-50 bg-opacity-65">
       <HomeThingsToDo />
      </div>
+
   </NuxtLayout>
 </template>
 
