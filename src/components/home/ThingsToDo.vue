@@ -3,6 +3,7 @@
     <div class="col-span-12 lg:col-span-5 space-y-5 h-full flex justify-center text-center md:text-left flex-col">
       <h3 class="text-3xl font-semibold text-primary-500">Popular things to do</h3>
       <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+      <CommonButton href="#" class="py-4 bg-primary-400 text-white hover:bg-primary-300"><span class="font-medium">See all</span></CommonButton>
     </div>
     <div class="col-span-12 lg:col-span-7 grid grid-cols-12 gap-8">
       <div class="py-5 col-span-4 text-center bg-neutral-50 rounded-xl space-y-2" v-for="data in THING_TO_DO_DATA" :key="data.id">

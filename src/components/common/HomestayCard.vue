@@ -1,14 +1,17 @@
 <template>
   <div
-    class="w-full rounded-2xl cursor-pointer overflow-hidden hover:shadow-md border transition-all flex flex-col bg-neutral-50"
+    class="hover_image_scale w-full rounded-2xl cursor-pointer overflow-hidden hover:shadow-md border transition-all flex flex-col bg-neutral-50"
     v-if="show === 'col'"
   >
     <div class="w-full relative">
-      <NuxtImg
-        :src="props.card_data?.thumbnail"
-        :alt="props.card_data?.name"
-        class="w-full aspect-video object-cover"
-      />
+      <div class="overflow-hidden">
+        <NuxtImg
+          loading="lazy"
+          :src="props.card_data?.thumbnail"
+          :alt="props.card_data?.name"
+          class="w-full aspect-video object-cover"
+        />
+      </div>
       <button
         class="absolute bottom-0 p-2 rounded-full right-2 bg-neutral-50 translate-y-1/2 border hover:bg-primary-50 transition-colors"
         @click="
@@ -33,14 +36,14 @@
     <div class="p-3 space-y-2 flex flex-col flex-1">
       <div class="flex-1 space-y-2">
         <h3
-          class="line-clamp-2 font-semibold text-xl cursor-pointer hover:underline"
+          class="line-clamp-1 sm:line-clamp-2 font-semibold text-xl cursor-pointer hover:underline"
         >
           {{ props.card_data?.name }}
         </h3>
         <!-- address -->
         <div class="flex flex-row space-x-1 items-center">
           <NuxtIcon name="ph:map-pin-light" class="w-4 h-4 block flex-shrink-0" />
-          <p class="text-neutral-600">{{ props.card_data?.address }}</p>
+          <p class="text-neutral-600 line-clamp-1 sm:line-clamp-2">{{ props.card_data?.address }}</p>
         </div>
         <!-- rating -->
         <div class="flex flex-row items-center gap-1">
@@ -96,6 +99,7 @@
     </button>
     <div class="col-span-1 aspect-square relative">
       <NuxtImg
+        loading="lazy"
         :src="props.card_data?.thumbnail"
         :alt="props.card_data?.name"
         class="w-full h-full rounded-2xl object-cover"

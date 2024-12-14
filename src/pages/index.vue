@@ -30,6 +30,7 @@
         </div>
       </div>
     </div>
+<<<<<<< Updated upstream
     <!-- section popular location -->
     <div>
       <CommonSectionWrap title="Popular location" seeMore="#">
@@ -42,11 +43,36 @@
      <div class="bg-primary-50 bg-opacity-65">
       <HomeThingsToDo />
      </div>
+=======
+    <!-- section slider popular location -->
+    <CommonSectionWrap title="Popular location">
+      <div>
+        <SliderHomeStayCard :slidesData="CARD_DATA" />
+      </div>
+    </CommonSectionWrap>
+
+    <!-- section things to do -->
+    <div class="bg-primary-50 bg-opacity-65">
+      <HomeThingsToDo />
+    </div>
+
+    <!-- section list trending location -->
+    <CommonSectionWrap title="Trending Destinations">
+      <HomeTrendingLocation />
+    </CommonSectionWrap>
+
+    <!-- section image and content -->
+    <CommonWrapperBackgroudRadius>
+      <HomeContentWithImg />
+    </CommonWrapperBackgroudRadius>
+    <!-- why choose us -->
+     <HomeWhyChooseUs />
+>>>>>>> Stashed changes
   </NuxtLayout>
 </template>
 
 <script lang="ts" setup>
-import { CARD_DATA, CATS_DATA } from '~/data/homepage';
+import { CARD_DATA, CATS_DATA } from "~/data/homepage";
 
 useSeoMeta({
   title: "Home",

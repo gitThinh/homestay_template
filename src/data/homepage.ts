@@ -85,3 +85,90 @@ export const CARD_DATA: IHomestayCard[]  = [
     isWishlist: false,
   }
 ];
+
+export const TREND_DATA = [
+  {
+    id: 1,
+    image: "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Ffeatures%2F2%2F1.jpg&w=640&q=75",
+    title: "Cruises",
+    desc: "100+ Tours"
+  },
+  {
+    id: 2,
+    image: "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Ffeatures%2F2%2F2.jpg&w=640&q=75",
+    title: "Beach Tours",
+    desc: "100+ Tours"
+  },
+  {
+    id: 3,
+    image: "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Ffeatures%2F2%2F3.jpg&w=640&q=75",
+    title: "City Tours",
+    desc: "100+ Tours"
+  },
+  {
+    id: 4,
+    image: "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Ffeatures%2F2%2F4.jpg&w=640&q=75",
+    title: "Museum Tour",
+    desc: "100+ Tours"
+  },
+  {
+    id: 5,
+    image: "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Ffeatures%2F2%2F5.jpg&w=640&q=75",
+    title: "Food",
+    desc: "100+ Tours"
+  },
+  {
+    id: 6,
+    image: "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Ffeatures%2F2%2F6.jpg&w=640&q=75",
+    title: "Hiking",
+    desc: "100+ Tours"
+  },
+]
+
+export const CONTENT_IMG_DATA = [
+  {
+    id: 1,
+    title: "Ultimate flexibility",
+    desc: "You’re in control, with free cancellation and payment.",
+    icon: "https://viatour-nextjs.vercel.app/img/icons/1/ticket.svg",
+  },
+  {
+    id: 2,
+    title: "Memorable experiences",
+    desc: "Browse and book tours and activities so incredible.",
+    icon: "https://viatour-nextjs.vercel.app/img/icons/1/hot-air-balloon.svg",
+  },
+  {
+    id: 3,
+    title: "Quality at our core",
+    desc: "High quality standards. Millions of reviews.",
+    icon: "https://viatour-nextjs.vercel.app/img/icons/1/diamond.svg",
+  },
+]
+
+export const CHOOSE_US_DATA = [
+  {
+    id: 1,
+    title: "932M",
+    desc: "Total Donations",
+    icon: "https://viatour-nextjs.vercel.app/img/icons/3/1.svg",
+  },
+  {
+    id: 2,
+    title: "24M",
+    desc: "Campaigns Closed",
+    icon: "https://viatour-nextjs.vercel.app/img/icons/3/2.svg",
+  },
+  {
+    id: 3,
+    title: "10M",
+    desc: "Happy People",
+    icon: "https://viatour-nextjs.vercel.app/img/icons/3/3.svg",
+  },
+  {
+    id: 4,
+    title: "65M",
+    desc: "Our Volunteers",
+    icon: "https://viatour-nextjs.vercel.app/img/icons/3/4.svg",
+  },
+]
