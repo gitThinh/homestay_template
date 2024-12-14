@@ -5,8 +5,8 @@
       <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
       <CommonButton href="#" class="py-4 bg-primary-400 text-white hover:bg-primary-300"><span class="font-medium">See all</span></CommonButton>
     </div>
-    <div class="col-span-12 lg:col-span-7 grid grid-cols-12 gap-8">
-      <div class="py-5 col-span-4 text-center bg-neutral-50 rounded-xl space-y-2" v-for="data in THING_TO_DO_DATA" :key="data.id">
+    <div class="col-span-12 lg:col-span-7 grid grid-cols-12 gap-4 md:gap-8">
+      <div class="py-5 col-span-6 md:col-span-4 text-center bg-neutral-50 rounded-xl space-y-2" v-for="data in THING_TO_DO_DATA" :key="data.id">
         <div class="w-max mx-auto rounded-full bg-primary-50 p-3">
           <NuxtIcon :name="data.icon" class="w-10 h-10 block text-primary-800" />
         </div>

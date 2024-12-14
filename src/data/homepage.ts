@@ -83,7 +83,22 @@ export const CARD_DATA: IHomestayCard[]  = [
       { value: 200, time: 4 },
     ],
     isWishlist: false,
-  }
+  },
+  {
+    id: "2",
+    thumbnail: "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2FtourCards%2F1%2F6.png&w=640&q=75",
+    address: "72 Nguyễn Trọng Nghĩa, Sơn Trà, Đà nẵng, Việt Nam",
+    name: "mofiori homestay 2",
+    rating: {
+      star: 4.8,
+      count: 30,
+    },
+    price: [
+      { value: 169, time: 2 },
+      { value: 299, time: 4 },
+    ],
+    isWishlist: false,
+  },
 ];
 
 export const TREND_DATA = [

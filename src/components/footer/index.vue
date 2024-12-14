@@ -1,6 +1,6 @@
 <template>
   <div class="bg-primary-800 text-neutral-50 py-16">
-    <div class="container mx-auto px-3 grid grid-cols-12 gap-10">
+    <div class="container mx-auto px-3 grid grid-cols-12 space-y-10 md:gap-10 md:space-y-0">
       <div class="space-y-3 col-span-12 lg:col-span-4 xl:col-span-5 ">
         <h3 class="font-semibold text-2xl text-white">Contact</h3>
         <div class="w-10 h-px bg-primary-50 rounded-full"></div>

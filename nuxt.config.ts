@@ -16,6 +16,12 @@ export default defineNuxtConfig({
     'nuxt-swiper',
   ],
 
+  // swiper config
+  swiper: {
+    bundled: true,
+    enableComposables: true,
+  },
+
   // nuxt icon config
   icon: {
     componentName: "NuxtIcon",
