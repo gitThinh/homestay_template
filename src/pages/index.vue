@@ -33,17 +33,6 @@
     <!-- section slider popular location -->
     <CommonSectionWrap title="Popular location">
       <div>
-       <SliderHomeStayCard :slidesData="CARD_DATA" />
-      </div>
-    </CommonSectionWrap>
-    
-    <!-- section things to do -->
-     <div class="bg-primary-50 bg-opacity-65">
-      <HomeThingsToDo />
-     </div>
-    <!-- section slider popular location -->
-    <CommonSectionWrap title="Popular location">
-      <div>
         <SliderHomeStayCard :slidesData="CARD_DATA" />
       </div>
     </CommonSectionWrap>
