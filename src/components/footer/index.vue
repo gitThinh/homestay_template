@@ -101,7 +101,6 @@
             Android App
           </a>
         </div>
-        
       </div>
     </div>
   </div>

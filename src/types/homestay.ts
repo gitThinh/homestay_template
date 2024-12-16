@@ -13,3 +13,13 @@ export interface IHomestayCard {
     }[],
     isWishlist: boolean,
 }
+
+export interface IUserComment {
+    id: string,
+    name: string,
+    type?: string,
+    comment?: string,
+    avatar?: string,
+    rating: number,
+    isVerify: boolean,
+}

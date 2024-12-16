@@ -19,7 +19,7 @@ body {
 }
 
 .bg_main_image {
-  background-image: url("@@/public/homestay.webp");
+  background-image: url("@@/public/images/homestay.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% 70%;

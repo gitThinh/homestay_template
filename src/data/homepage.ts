@@ -1,4 +1,4 @@
-import type { IHomestayCard } from "~/types/homestay";
+import type { IHomestayCard, IUserComment } from "~/types/homestay";
 
 export const CATS_DATA = [
   {
@@ -185,5 +185,53 @@ export const CHOOSE_US_DATA = [
     title: "65M",
     desc: "Our Volunteers",
     icon: "https://viatour-nextjs.vercel.app/img/icons/3/4.svg",
+  },
+]
+
+export const USER_COMMENT: IUserComment[] = [
+  {
+    id: "1",
+    name: "User 1",
+    rating: 5,
+    // type: "",
+    // avatar: "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Favatars%2F1%2F1.jpg&w=128&q=75",
+    comment: "I think Educrat is the best theme I ever seen this year. Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance",
+    isVerify: false,
+  },
+  {
+    id: "2",
+    name: "customer 2",
+    rating: 5,
+    isVerify: true,
+    type: "Home owner",
+    avatar: "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Favatars%2F1%2F1.jpg&w=128&q=75",
+    comment: "Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance",
+  },
+  {
+    id: "3",
+    name: "customer 3",
+    rating: 5,
+    isVerify: false,
+    type: "marketing",
+    // avatar: "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Favatars%2F1%2F1.jpg&w=128&q=75",
+    comment: "I think Educrat is the best theme I ever seen this year. Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance",
+  },
+  {
+    id: "4",
+    name: "customer 4",
+    rating: 5,
+    isVerify: true,
+    type: "Customer",
+    avatar: "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Favatars%2F1%2F1.jpg&w=128&q=75",
+    comment: "I think Educrat is the best theme I ever seen this year. Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance",
+  },
+  {
+    id: "5",
+    name: "customer 5",
+    rating: 5,
+    isVerify: true,
+    type: "Manager",
+    avatar: "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Favatars%2F1%2F1.jpg&w=128&q=75",
+    comment: "I think Educrat is the best theme I ever seen this year. Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance",
   },
 ]

@@ -53,6 +53,18 @@
     </CommonWrapperBackgroudRadius>
     <!-- why choose us -->
      <HomeWhyChooseUs />
+
+     <!-- customer reviews -->
+    <div class="bg-primary-50 bg-opacity-65">
+      <CommonSectionWrap title="What our Customer are saying" titleClass="!text-3xl" seeMore="#">
+        <HomeCustomerReview />
+      </CommonSectionWrap>
+    </div>
+
+    <!-- Section send mail -->
+    <div style="background-image: url('https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Fcta%2F2%2Fbg.png&w=1920&q=75'); background-repeat: no-repeat;">
+      <HomeSubcribeEmail />
+    </div>
   </NuxtLayout>
 </template>
 

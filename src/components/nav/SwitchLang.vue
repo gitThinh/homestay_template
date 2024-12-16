@@ -23,8 +23,8 @@
           <div class="flex space-x-2">
             <HeadlessMenuItem v-for="item in locales" :key="item.code">
               <button
-                class="rounded-lg px-4 py-2 hover:bg-neutral-100 transition-all"
-                :class="locale === item.code ? 'bg-neutral-100' : ''"
+                class="rounded-lg px-4 py-2 hover:bg-primary-50 hover:bg-opacity-70 transition-all"
+                :class="locale === item.code ? 'bg-primary-50 bg-opacity-70' : ''"
                 @click="setLocale(item.code)"
               >
                 {{ item.name }}
