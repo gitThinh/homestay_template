@@ -61,8 +61,11 @@
       </CommonSectionWrap>
     </div>
 
+    <!-- Section event/sales -->
+    <HomeEventSales />
+
     <!-- Section send mail -->
-    <div style="background-image: url('https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Fcta%2F2%2Fbg.png&w=1920&q=75'); background-repeat: no-repeat;">
+    <div class="section_sendmail">
       <HomeSubcribeEmail />
     </div>
   </NuxtLayout>
@@ -76,3 +79,12 @@ useSeoMeta({
   description: "Search any Homestay in Da Nang",
 });
 </script>
+
+<style>
+.section_sendmail {
+  background-image: url('https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Fcta%2F2%2Fbg.png&w=1920&q=75');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>

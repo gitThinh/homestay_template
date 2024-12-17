@@ -2,7 +2,7 @@
   <div
     class="container mx-auto py-16 px-3 flex flex-row justify-between items-center"
   >
-    <div class="w-full md:w-2/3 mx-auto lg:mx-0 xl:w-2/5 space-y-10">
+    <div class="w-full md:w-1/2 mx-auto lg:mx-0 xl:w-2/5 space-y-10">
       <h3 class="font-bold text-3xl">
         Subscribe To Our Mailing List And Stay Up To Date
       </h3>
@@ -21,9 +21,11 @@
       </div>
     </div>
     <div class="hidden md:block w-1/3 xl:w-2/5">
-      <!-- <NuxtImg
+      <img
+        src="/assets/images/pic-send-mail.png"
+        loading="lazy"
         class="object-cover"
-      /> -->
+      />
     </div>
   </div>
 </template>
