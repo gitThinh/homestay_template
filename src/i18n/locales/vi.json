@@ -1,1 +1,63 @@
-{}
+{
+  "languages": "Ngôn ngữ",
+  "signUp": "Đăng ký",
+  "logIn": "Đăng nhập",
+  "common": {
+    "location": "Địa điểm",
+    "seeAll": "Xem tất cả",
+    "seeMore": "Xem thêm",
+    "send": "Gửi",
+    "from": "Từ",
+    "contact": "Liên hệ",
+    "support": "Hỗ trợ",
+    "moreDetail": "Chi tiết",
+    "yourEmail": "Email của bạn"
+  },
+  "footer": {
+    "followUs": "Theo dõi",
+    "aboutUs": "Về chúng tôi",
+    "info": "Thông tin",
+    "termAndPolicy": "Điều khoản và chính sách",
+    "siteMap": "Sơ đồ trang web",
+    "contactUs": "Liên hệ",
+    "dataPolicy": "Chính sách dữ liệu",
+    "howItWork": "Cách hoạt động",
+    "helpCenter": "Trung tâm trợ giúp",
+    "chatWithUs": "Trò chuyện",
+    "newsLetter": "Bản tin",
+    "subToFree": "Đăng ký nhận bản tin miễn phí và luôn cập nhật",
+    "mobileApp": "Ứng dụng điện thoại"
+  },
+  "homepage": {
+    "chooseCountry": "Chọn quốc gia cho chuyến phiêu lưu tiếp theo của bạn",
+    "orSelectType": "Hoặc duyệt theo danh mục",
+    "popularLocation": "Địa điểm nổi tiếng",
+    "popularThingToDo": "Hoạt động phổ biến",
+    "trendDestinations": "Điểm đến thịnh hành",
+
+    "whyChooseUs": "Tại sao chọn chúng tôi",
+    "ultimateFlex": "Linh hoạt tối đa",
+    "youInControl": "Bạn luôn chủ động với chính sách hủy miễn phí và thanh toán linh hoạt.",
+    "memorableExp": "Trải nghiệm khó quên",
+    "browseAndBook": "Duyệt và đặt các chuyến tham quan, hoạt động đầy ấn tượng.",
+    "qualityCore": "Chất lượng là cốt lõi",
+    "highQuality": "Tiêu chuẩn chất lượng cao với hàng triệu đánh giá đáng tin cậy.",
+
+    "totalDonation": "Tổng số quyên góp",
+    "campaigns": "Chiến dịch đã kết thúc",
+    "happyPeople": "Khách hàng hài lòng",
+    "ourVolunteers": "Tình nguyện viên của chúng tôi",
+
+    "customerSaying": "Khách hàng nói gì về chúng tôi",
+
+    "enjoyCool": "Tận hưởng những ưu đãi nghỉ dưỡng hấp dẫn.",
+    "bestDeal": "Ưu đãi nghỉ dưỡng tốt nhất",
+    "dontForgetCheck": "Đừng bỏ lỡ những hoạt động thú vị này.",
+    "allTimeFavorite": "Hoạt động được yêu thích nhất tại Dubai",
+    "discount": "Giảm giá",
+    "discountOfEurope": "Khám phá vẻ đẹp tuyệt vời của châu Âu",
+
+    "subToMailList": "Đăng ký danh sách email để luôn được cập nhật thông tin mới nhất",
+    "loremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }
+}

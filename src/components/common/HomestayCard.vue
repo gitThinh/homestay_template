@@ -66,7 +66,7 @@
           <p class="font-semibold">{{ props.card_data?.price?.[0]?.time }}h</p>
         </div>
         <p>
-          From
+          {{ $t("common.from") }}
           <span class="font-semibold text-lg"
             >{{ props.card_data?.price?.[0]?.value }}.000đ</span
           >
@@ -139,7 +139,7 @@
           <p class="font-semibold">{{ props.card_data?.price?.[0]?.time }}h</p>
         </div>
         <p>
-          From
+          {{ $t("common.from") }}
           <span class="font-semibold text-lg"
             >{{ props.card_data?.price?.[0]?.value }}.000đ</span
           >

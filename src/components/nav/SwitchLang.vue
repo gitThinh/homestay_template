@@ -5,7 +5,7 @@
         <button
           class="flex flex-row items-center px-4 py-2 gap-1 rounded-full btn_nude"
         >
-          <p>Languages</p>
+          <p>{{ $t("languages") }}</p>
           <NuxtIcon name="flowbite:angle-down-outline" class="block w-5 h-5" />
         </button>
       </HeadlessMenuButton>

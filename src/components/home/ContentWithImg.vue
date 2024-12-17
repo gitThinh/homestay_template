@@ -8,7 +8,7 @@
       :class="props.positionImg ? 'justify-start' : 'justify-end'"
     >
       <div class="w-full lg:w-5/6 space-y-8 lg:space-y-12">
-        <h2 class="text-3xl font-bold text-center lg:text-left">Why Choose Us</h2>
+        <h2 class="text-3xl font-bold text-center lg:text-left">{{ $t('homepage.whyChooseUs') }}</h2>
         <div class="choose_us_content space-y-4">
             <div class="flex flex-row items-center gap-5 sm:gap-8" v-for="data in CONTENT_IMG_DATA">
                 <NuxtImg :src="data.icon" class="w-10 md:w-14" />
@@ -31,7 +31,27 @@
 </template>
 
 <script lang="ts" setup>
-import { CONTENT_IMG_DATA } from '~/data/homepage';
+const {t} = useI18n()
+const CONTENT_IMG_DATA = [
+  {
+    id: 1,
+    title: t("homepage.ultimateFlex"),
+    desc: t("homepage.youInControl"),
+    icon: "https://viatour-nextjs.vercel.app/img/icons/1/ticket.svg",
+  },
+  {
+    id: 2,
+    title: t("homepage.memorableExp"),
+    desc: t("homepage.browseAndBook"),
+    icon: "https://viatour-nextjs.vercel.app/img/icons/1/hot-air-balloon.svg",
+  },
+  {
+    id: 3,
+    title: t("homepage.qualityCore"),
+    desc: t("homepage.highQuality"),
+    icon: "https://viatour-nextjs.vercel.app/img/icons/1/diamond.svg",
+  },
+]
 
 const props = defineProps({
   positionImg: {
@@ -40,5 +60,3 @@ const props = defineProps({
   },
 });
 </script>
-
-<style></style>

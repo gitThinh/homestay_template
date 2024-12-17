@@ -140,54 +140,6 @@ export const TREND_DATA = [
   },
 ]
 
-export const CONTENT_IMG_DATA = [
-  {
-    id: 1,
-    title: "Ultimate flexibility",
-    desc: "You’re in control, with free cancellation and payment.",
-    icon: "https://viatour-nextjs.vercel.app/img/icons/1/ticket.svg",
-  },
-  {
-    id: 2,
-    title: "Memorable experiences",
-    desc: "Browse and book tours and activities so incredible.",
-    icon: "https://viatour-nextjs.vercel.app/img/icons/1/hot-air-balloon.svg",
-  },
-  {
-    id: 3,
-    title: "Quality at our core",
-    desc: "High quality standards. Millions of reviews.",
-    icon: "https://viatour-nextjs.vercel.app/img/icons/1/diamond.svg",
-  },
-]
-
-export const CHOOSE_US_DATA = [
-  {
-    id: 1,
-    title: "932M",
-    desc: "Total Donations",
-    icon: "https://viatour-nextjs.vercel.app/img/icons/3/1.svg",
-  },
-  {
-    id: 2,
-    title: "24M",
-    desc: "Campaigns Closed",
-    icon: "https://viatour-nextjs.vercel.app/img/icons/3/2.svg",
-  },
-  {
-    id: 3,
-    title: "10M",
-    desc: "Happy People",
-    icon: "https://viatour-nextjs.vercel.app/img/icons/3/3.svg",
-  },
-  {
-    id: 4,
-    title: "65M",
-    desc: "Our Volunteers",
-    icon: "https://viatour-nextjs.vercel.app/img/icons/3/4.svg",
-  },
-]
-
 export const USER_COMMENT: IUserComment[] = [
   {
     id: "1",

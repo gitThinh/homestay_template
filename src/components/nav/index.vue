@@ -25,13 +25,13 @@
         <CommonButton
           class="!rounded-full font-semibold shadow-md"
           :href="PATH_AUTH.register"
-          >Sign Up</CommonButton
+          >{{ $t("signUp") }}</CommonButton
         >
         <!-- redirect to login page -->
         <CommonButton
           class="!rounded-full font-semibold shadow-md"
           :href="PATH_AUTH.login"
-          >Log In</CommonButton
+          >{{ $t("logIn") }}</CommonButton
         >
       </div>
 

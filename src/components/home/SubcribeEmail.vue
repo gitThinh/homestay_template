@@ -4,19 +4,19 @@
   >
     <div class="w-full md:w-1/2 mx-auto lg:mx-0 xl:w-2/5 space-y-10">
       <h3 class="font-bold text-3xl">
-        Subscribe To Our Mailing List And Stay Up To Date
+        {{ $t("homepage.subToMailList") }}
       </h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>{{ $t("homepage.loremIpsum") }}</p>
       <div class="input p-4 bg-primary-500 bg-opacity-10 rounded-lg flex">
         <input
           type="text"
-          placeholder="Your email"
+          :placeholder="$t('common.yourEmail')"
           class="bg-transparent outline-none flex-1"
         />
         <button
           class="bg-primary-300 text-white py-3 px-6 uppercase font-semibold rounded-lg hover:bg-primary-200 transition-all"
         >
-          Send
+          {{ $t("common.send") }}
         </button>
       </div>
     </div>

@@ -11,7 +11,31 @@
 </template>
 
 <script lang="ts" setup>
-import { CHOOSE_US_DATA } from '~/data/homepage';
-
-
+const {t} = useI18n();
+const CHOOSE_US_DATA = [
+  {
+    id: 1,
+    title: "932M",
+    desc: t("homepage.totalDonation"),
+    icon: "https://viatour-nextjs.vercel.app/img/icons/3/1.svg",
+  },
+  {
+    id: 2,
+    title: "24M",
+    desc: t("homepage.campaigns"),
+    icon: "https://viatour-nextjs.vercel.app/img/icons/3/2.svg",
+  },
+  {
+    id: 3,
+    title: "10M",
+    desc: t("homepage.happyPeople"),
+    icon: "https://viatour-nextjs.vercel.app/img/icons/3/3.svg",
+  },
+  {
+    id: 4,
+    title: "65M",
+    desc: t("homepage.ourVolunteers"),
+    icon: "https://viatour-nextjs.vercel.app/img/icons/3/4.svg",
+  },
+]
 </script>

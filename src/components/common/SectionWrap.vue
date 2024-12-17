@@ -23,7 +23,7 @@
         v-if="seeMore && props.position === 'left'"
         class="flex items-center hover:underline"
       >
-        <span>See more</span>
+        <span>{{ $t("common.seeMore") }}</span>
         <NuxtIcon
           name="iconoir:arrow-right"
           class="ml-1 text-sm inline-block"
