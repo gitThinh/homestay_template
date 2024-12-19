@@ -49,13 +49,13 @@ useSwiper(containerRef, {
     prevEl: ".prevbtn",
   },
   breakpoints: {
-    425: {
+    640: {
       slidesPerView: 2,
     },
-    768: {
+    1024: {
       slidesPerView: 3,
     },
-    1280: {
+    1440: {
       slidesPerView: 4,
     },
     1640: {

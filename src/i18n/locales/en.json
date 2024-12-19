@@ -1,1 +1,89 @@
-{}
+{
+  "languages": "Languages",
+  "homeSeo": {
+    "title": "Home",
+    "desc": "Search any Homestay in Da Nang"
+  },
+  "signUp": "Sign Up",
+  "logIn": "Log In",
+  "forgotPassword": "Forgot password",
+  "common": {
+    "location": "Location",
+    "seeAll": "See all",
+    "seeMore": "See more",
+    "send": "Send",
+    "from": "From",
+    "contact": "Contact",
+    "support": "Support",
+    "moreDetail": "More detail",
+    "yourEmail": "Your email address"
+  },
+  "footer": {
+    "followUs": "Follow Us",
+    "aboutUs": "About Us",
+    "info": "Infomation",
+    "termAndPolicy": "Term and policy",
+    "siteMap": "Site map",
+    "contactUs": "Contact us",
+    "dataPolicy": "Data policy",
+    "howItWork": "How it work",
+    "helpCenter": "Help center",
+    "chatWithUs": "Chat with us",
+    "newsLetter": "Newsletter",
+    "subToFree": "Subscribe to the free newsletter and stay up to date",
+    "mobileApp": "Mobile Apps"
+  },
+  "homepage": {
+    "chooseCountry": "Choose a Country For Your Next Adventure?",
+    "orSelectType": "Or browse the selected type",
+    "popularLocation": "Popular location",
+    "popularThingToDo": "Popular things to do",
+    "trendDestinations": "Trending Destinations",
+
+    "whyChooseUs": "Why Choose Us",
+    "ultimateFlex": "Ultimate flexibility",
+    "youInControl": "You’re in control, with free cancellation and payment.",
+    "memorableExp": "Memorable experiences",
+    "browseAndBook": "Browse and book tours and activities so incredible.",
+    "qualityCore": "Quality at our core",
+    "highQuality": "High quality standards. Millions of reviews.",
+
+    "totalDonation": "Total Donations",
+    "campaigns": "Campaigns Closed",
+    "happyPeople": "Happy People",
+    "ourVolunteers": "Our Volunteers",
+
+    "customerSaying": "What our Customer are saying",
+
+    "enjoyCool": "Enjoy these cool staycation promotions.",
+    "bestDeal": "Best staycation deals",
+    "dontForgetCheck": "Don't forget to check out these activities.",
+    "allTimeFavorite": "All Time Favourite Activities in Dubai",
+    "discount": "Discount",
+    "discountOfEurope": "Discover the wow of Europe",
+
+    "subToMailList": "Subscribe To Our Mailing List And Stay Up To Date",
+    "loremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  "categories": {
+    "kitchen": "Kitchen",
+    "barAndLou": "Bar & Lounge",
+    "projector": "Projector",
+    "boardGame": "Board game",
+    "camping": "Camping",
+    "villa": "Villa",
+    "beachView": "Beach view",
+    "bia": "Billiards",
+    "privateInOut": "Private check in/out",
+    "apartment": "Apartment"
+  },
+
+  "auth": {
+    "password": "Password",
+    "name": "Full name",
+    "confirmPassword": "Confirm password",
+    "alreadyAccount": "Already have an account?",
+    "createAccount": "Create an account",
+    "dontHaveAccount": "Don't have an account?"
+  }
+}

@@ -10,7 +10,7 @@
     <NuxtIcon name="eos-icons:loading" class="w-8 h-8 block" v-if="isLoading" />
     <slot />
   </button>
-  <NuxtLinkLocale :to="props.href" v-bind="$attrs" class="px-4 py-2 rounded-lg shadow-sm bg-neutral-50 hover:bg-neutral-100 transition-colors" v-else>
+  <NuxtLinkLocale :to="props.href" v-bind="$attrs" class="px-4 py-2 rounded-lg shadow-sm bg-neutral-50 hover:bg-neutral-100 transition-colors cursor-pointer text-center" v-else>
     <slot />
   </NuxtLinkLocale>
 </template>

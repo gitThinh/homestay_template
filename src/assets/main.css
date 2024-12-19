@@ -19,7 +19,7 @@ body {
 }
 
 .bg_main_image {
-  background-image: url("@@/public/homestay.webp");
+  background-image: url("@@/public/images/homestay.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% 70%;
@@ -69,3 +69,7 @@ body {
   }
 }
 
+.hover_image_scale:hover img {
+  transform: scale(1.1);
+  @apply transition-all
+}
