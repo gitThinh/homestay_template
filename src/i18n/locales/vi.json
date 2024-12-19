@@ -1,7 +1,12 @@
 {
   "languages": "Ngôn ngữ",
+  "homeSeo": {
+    "title": "Trang chủ",
+    "desc": "Tìm kiếm homestay ở Đà Nẵng"
+  },
   "signUp": "Đăng ký",
   "logIn": "Đăng nhập",
+  "forgotPassword": "Quên mật khẩu",
   "common": {
     "location": "Địa điểm",
     "seeAll": "Xem tất cả",
@@ -59,5 +64,27 @@
 
     "subToMailList": "Đăng ký danh sách email để luôn được cập nhật thông tin mới nhất",
     "loremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+  },
+  "categories": {
+    "kitchen": "Khu bếp",
+    "barAndLou": "Quầy bar & Lounge",
+    "projector": "Máy chiếu",
+    "boardGame": "Trò chơi nhóm",
+    "camping": "Cắm trại",
+    "villa": "Biệt thự",
+    "beachView": "Hướng biển",
+    "bia": "Bi-a",
+    "privateInOut": "Nhận/trả phòng riêng",
+    "apartment": "Căn hộ"
+  },
+
+  "auth": {
+    "password": "Mật khẩu",
+    "name": "Họ và tên",
+    "confirmPassword": "Nhập lại mật khẩu",
+    "alreadyAccount": "Bạn đã có tài khoản?",
+    "createAccount": "Tạo tài khoản",
+    "dontHaveAccount": "Bạn chưa có tài khoản?"
   }
 }

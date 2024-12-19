@@ -41,41 +41,42 @@
 </template>
 
 <script lang="ts" setup>
+const {t} = useI18n();
 const THING_TO_DO_DATA = [
   {
     id: 1,
     icon: "material-symbols-light:camping-outline",
-    title: "Camping",
+    title: t("categories.camping"),
     desc: "60+",
   },
   {
     id: 2,
     icon: "material-symbols-light:villa-outline-rounded",
-    title: "Villa",
+    title: t("categories.villa"),
     desc: "60+",
   },
   {
     id: 3,
     icon: "fluent:beach-24-regular",
-    title: "Beach view",
+    title: t("categories.beachView"),
     desc: "60+",
   },
   {
     id: 4,
     icon: "ri:billiards-line",
-    title: "Billiards",
+    title: t("categories.bia"),
     desc: "60+",
   },
   {
     id: 5,
     icon: "arcticons:privatelock",
-    title: "Private check in/out",
+    title: t("categories.privateInOut"),
     desc: "60+",
   },
   {
     id: 6,
     icon: "fluent:building-32-regular",
-    title: "Apartment",
+    title: t("categories.apartment"),
     desc: "60+",
   },
 ];

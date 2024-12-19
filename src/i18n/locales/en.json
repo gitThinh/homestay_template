@@ -1,7 +1,12 @@
 {
   "languages": "Languages",
+  "homeSeo": {
+    "title": "Home",
+    "desc": "Search any Homestay in Da Nang"
+  },
   "signUp": "Sign Up",
   "logIn": "Log In",
+  "forgotPassword": "Forgot password",
   "common": {
     "location": "Location",
     "seeAll": "See all",
@@ -59,5 +64,26 @@
 
     "subToMailList": "Subscribe To Our Mailing List And Stay Up To Date",
     "loremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  "categories": {
+    "kitchen": "Kitchen",
+    "barAndLou": "Bar & Lounge",
+    "projector": "Projector",
+    "boardGame": "Board game",
+    "camping": "Camping",
+    "villa": "Villa",
+    "beachView": "Beach view",
+    "bia": "Billiards",
+    "privateInOut": "Private check in/out",
+    "apartment": "Apartment"
+  },
+
+  "auth": {
+    "password": "Password",
+    "name": "Full name",
+    "confirmPassword": "Confirm password",
+    "alreadyAccount": "Already have an account?",
+    "createAccount": "Create an account",
+    "dontHaveAccount": "Don't have an account?"
   }
 }

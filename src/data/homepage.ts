@@ -1,28 +1,5 @@
 import type { IHomestayCard, IUserComment } from "~/types/homestay";
 
-export const CATS_DATA = [
-  {
-    id: 1,
-    name: "Kitchen",
-    icon: "guidance:kitchen",
-  },
-  {
-    id: 2,
-    name: "Bar & Lounge",
-    icon: "la:glass-martini",
-  },
-  {
-    id: 3,
-    name: "Projector",
-    icon: "solar:projector-outline",
-  },
-  {
-    id: 4,
-    name: "Board game",
-    icon: "fluent:board-games-20-regular",
-  },
-];
-
 export const CARD_DATA: IHomestayCard[]  = [
   {
     id: "1",

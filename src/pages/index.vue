@@ -72,12 +72,36 @@
 </template>
 
 <script lang="ts" setup>
-import { CARD_DATA, CATS_DATA } from "~/data/homepage";
+import { CARD_DATA } from "~/data/homepage";
+const {t} = useI18n();
 
 useSeoMeta({
-  title: "Home",
-  description: "Search any Homestay in Da Nang",
+  title: t("homeSeo.title"),
+  description: t("homeSeo.desc"),
 });
+
+const CATS_DATA = [
+  {
+    id: 1,
+    name: t("categories.kitchen"),
+    icon: "guidance:kitchen",
+  },
+  {
+    id: 2,
+    name: t("categories.barAndLou"),
+    icon: "la:glass-martini",
+  },
+  {
+    id: 3,
+    name: t("categories.projector"),
+    icon: "solar:projector-outline",
+  },
+  {
+    id: 4,
+    name: t("categories.boardGame"),
+    icon: "fluent:board-games-20-regular",
+  },
+];
 </script>
 
 <style>
