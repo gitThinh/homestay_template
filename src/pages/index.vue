@@ -8,14 +8,14 @@
         <h1
           class="text-4xl sm:text-6xl lg:text-7xl !leading-tight font-bold text-center w-4/5"
         >
-          {{ $t("homepage.chooseCountry") }}
+          {{ t("homepage.chooseCountry") }}
         </h1>
         <!-- input search -->
         <div class="w-full">
           <InputMainHomePage />
         </div>
         <!-- or using search with categories -->
-        <p class="text-neutral-100">{{ $t("homepage.orSelectType") }}</p>
+        <p class="text-neutral-100">{{ t("homepage.orSelectType") }}</p>
         <div class="flex flex-row flex-wrap items-center justify-center gap-3">
           <CommonButton
             v-for="cate in CATS_DATA"
@@ -31,7 +31,7 @@
       </div>
     </div>
     <!-- section slider popular location -->
-    <CommonSectionWrap :title="$t('homepage.popularLocation')">
+    <CommonSectionWrap :title="t('homepage.popularLocation')">
       <div>
         <SliderHomeStayCard :slidesData="CARD_DATA" />
       </div>
@@ -43,7 +43,7 @@
     </div>
 
     <!-- section list trending location -->
-    <CommonSectionWrap :title="$t('homepage.trendDestinations')">
+    <CommonSectionWrap :title="t('homepage.trendDestinations')">
       <HomeTrendingLocation />
     </CommonSectionWrap>
 
@@ -56,7 +56,7 @@
 
      <!-- customer reviews -->
     <div class="bg-primary-50 bg-opacity-65">
-      <CommonSectionWrap :title="$t('homepage.customerSaying')" titleClass="!text-3xl" seeMore="#">
+      <CommonSectionWrap :title="t('homepage.customerSaying')" titleClass="!text-3xl" seeMore="#">
         <HomeCustomerReview />
       </CommonSectionWrap>
     </div>

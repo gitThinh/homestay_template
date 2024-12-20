@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto p-4 sm:p-10 sm:rounded-3xl" :class="bgColor">
+  <div class="container p-4 sm:p-10 sm:rounded-3xl" :class="bgColor">
     <slot />
   </div>
 </template>

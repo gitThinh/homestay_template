@@ -1,13 +1,9 @@
 <template>
   <div class="relative">
     <HeadlessMenu as="div">
-      <HeadlessMenuButton>
-        <button
-          class="flex flex-row items-center px-4 py-2 gap-1 rounded-full btn_nude"
-        >
-          <p>{{ $t("languages") }}</p>
+      <HeadlessMenuButton class="flex flex-row items-center px-4 py-2 gap-1 rounded-full btn_nude">
+          <p>{{ t("languages") }}</p>
           <NuxtIcon name="flowbite:angle-down-outline" class="block w-5 h-5" />
-        </button>
       </HeadlessMenuButton>
       <HeadlessTransitionRoot
         enter-active-class="transition duration-100 ease-out"
@@ -38,5 +34,6 @@
 </template>
 
 <script lang="ts" setup>
-const { locale, locales, setLocale } = useI18n();
+
+const { t, locale, locales, setLocale } = useI18n();
 </script>

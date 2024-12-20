@@ -6,11 +6,11 @@
     <div class="w-full relative">
       <div class="overflow-hidden">
         <NuxtImg
-          loading="lazy"
           :src="props.card_data?.thumbnail"
           :alt="props.card_data?.name"
           class="w-full aspect-video object-cover"
-        />
+          />
+          <!-- :placeholder="[1000, 1000]" -->
       </div>
       <button
         class="absolute bottom-0 p-2 rounded-full right-2 bg-neutral-50 translate-y-1/2 border hover:bg-primary-50 transition-colors"
@@ -66,7 +66,7 @@
           <p class="font-semibold">{{ props.card_data?.price?.[0]?.time }}h</p>
         </div>
         <p>
-          {{ $t("common.from") }}
+          {{ t("common.from") }}
           <span class="font-semibold text-lg"
             >{{ props.card_data?.price?.[0]?.value }}.000đ</span
           >
@@ -139,7 +139,7 @@
           <p class="font-semibold">{{ props.card_data?.price?.[0]?.time }}h</p>
         </div>
         <p>
-          {{ $t("common.from") }}
+          {{ t("common.from") }}
           <span class="font-semibold text-lg"
             >{{ props.card_data?.price?.[0]?.value }}.000đ</span
           >
@@ -151,6 +151,7 @@
 
 <script lang="ts" setup>
 import type { IHomestayCard } from "~/types/homestay";
+const {t} = useI18n();
 
 const props = defineProps({
   card_data: {

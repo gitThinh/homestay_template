@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed z-50 top-0 w-full transition-all" :class="isScrolled ? 'bg-primary-800 bg-opacity-90 shadow-sm' : 'bg-transparent'">
+  <div class="fixed z-50 top-0 w-full transition-all backdrop-blur-md" :class="isScrolled ? 'bg-primary-800 bg-opacity-90 shadow-sm' : 'bg-primary-800 bg-opacity-60'">
     <div
       class="flex items-center justify-between p-3 lg:px-10 lg:py-5 main_container"
     >
@@ -25,13 +25,13 @@
         <CommonButton
           class="!rounded-full font-semibold shadow-md"
           :href="PATH_AUTH.register"
-          >{{ $t("signUp") }}</CommonButton
+          >{{ t("signUp") }}</CommonButton
         >
         <!-- redirect to login page -->
         <CommonButton
           class="!rounded-full font-semibold shadow-md"
           :href="PATH_AUTH.login"
-          >{{ $t("logIn") }}</CommonButton
+          >{{ t("logIn") }}</CommonButton
         >
       </div>
 
@@ -48,6 +48,7 @@
 
 <script lang="ts" setup>
 import { PATH_AUTH, PATH_PAGE } from '~/constants/path';
+const {t} = useI18n();
 
 const isScrolled = ref(false);
 const handleScroll = () => {
