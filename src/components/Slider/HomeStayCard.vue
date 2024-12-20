@@ -1,10 +1,17 @@
 <template>
   <div class="relative">
-      <swiper-container ref="containerRef" :init="false">
-        <swiper-slide v-for="slideData in slidesData" :key="slideData.id" class="h-full">
-          <CommonHomestayCard :card_data="slideData" class="h-full" />
-        </swiper-slide>
-      </swiper-container>
+    <ClientOnly>
+      <template #default>
+        <swiper-container ref="containerRef" :init="false">
+          <swiper-slide v-for="slideData in slidesData" :key="slideData.id" class="h-full">
+            <CommonHomestayCard :card_data="slideData" class="h-full" />
+          </swiper-slide>
+        </swiper-container>
+      </template>
+      <template #fallback>
+        <div class="w-full h-[377px] bg-neutral-300 animate-pulse rounded-lg"></div>
+      </template>
+    </ClientOnly>
     <div class="control_group absolute -top-20 right-5">
       <button class="prevbtn hidden sm:inline-block">
         <NuxtIcon name="circum:square-chev-left" class="w-12 h-12 block text-neutral-600"/>
