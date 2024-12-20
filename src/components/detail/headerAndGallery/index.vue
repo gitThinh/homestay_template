@@ -18,8 +18,7 @@
       >
         <NuxtImg
           :src="img"
-          class="aspect-video object-cover object-center"
-          loading="lazy"
+          class="aspect-video object-cover object-center w-full h-full"
           :placeholder="[3000, 3000]"
         />
         <span
