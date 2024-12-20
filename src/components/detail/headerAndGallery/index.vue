@@ -19,7 +19,8 @@
         <NuxtImg
           :src="img"
           class="aspect-video object-cover object-center w-full h-full"
-          :placeholder="[3000, 3000]"
+          placeholder
+          placeholder-class="animate-pulse bg-neutral-400 w-full h-full"
         />
         <span
           v-if="index === 2 && galleryImgsLength > 3"
