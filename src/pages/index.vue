@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="default-layout">
+  <NuxtLayout name="bg-img-layout">
     <!-- header page -->
     <div class="min-h-dvh w-full bg_main_image">
       <div
@@ -74,6 +74,7 @@
 <script lang="ts" setup>
 import { CARD_DATA } from "~/data/homepage";
 const {t} = useI18n();
+
 
 useSeoMeta({
   title: t("homeSeo.title"),

@@ -1,5 +1,12 @@
 <template>
-  <div class="fixed z-50 top-0 w-full transition-all backdrop-blur-md" :class="isScrolled ? 'bg-primary-800 bg-opacity-90 shadow-sm' : 'bg-primary-800 bg-opacity-60'">
+  <div
+    class="z-50 top-0 w-full transition-all backdrop-blur-md"
+    :class="`${
+      isScrolled
+        ? 'bg-primary-800 bg-opacity-90 shadow-sm'
+        : 'bg-primary-800 bg-opacity-60'
+    } ${props.isSticky ? 'sticky' : 'fixed'}`"
+  >
     <div
       class="flex items-center justify-between p-3 lg:px-10 lg:py-5 main_container"
     >
@@ -38,8 +45,14 @@
       <!-- user login mobile -->
       <div class="block md:hidden">
         <!-- redirect to login page -->
-        <NuxtLinkLocale :to="PATH_AUTH.login" class="block p-1 rounded-full btn_nude">
-          <NuxtIcon name="la:user-solid" class="w-8 h-8 block text-neutral-50" />
+        <NuxtLinkLocale
+          :to="PATH_AUTH.login"
+          class="block p-1 rounded-full btn_nude"
+        >
+          <NuxtIcon
+            name="la:user-solid"
+            class="w-8 h-8 block text-neutral-50"
+          />
         </NuxtLinkLocale>
       </div>
     </div>
@@ -47,8 +60,15 @@
 </template>
 
 <script lang="ts" setup>
-import { PATH_AUTH, PATH_PAGE } from '~/constants/path';
-const {t} = useI18n();
+import { PATH_AUTH, PATH_PAGE } from "~/constants/path";
+const { t } = useI18n();
+
+const props = defineProps({
+  isSticky: {
+    type: Boolean,
+    default: false,
+  },
+});
 
 const isScrolled = ref(false);
 const handleScroll = () => {
