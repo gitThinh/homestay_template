@@ -46,7 +46,7 @@
       @close="handleCloseGallery"
     >
       <div
-        class="fixed inset-0 bg-white rounded-lg text-left shadow-xl transform transition-all px-4 py-10"
+        class="fixed inset-0 bg-white rounded-lg text-left shadow-xl transform transition-all p-4 pt-10 pb-7"
       >
         <HeadlessDialogTitle as="div" class="fixed top-2 right-2 w-full flex justify-between items-center">
           <div class=""></div>
