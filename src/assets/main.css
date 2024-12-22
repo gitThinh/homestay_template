@@ -8,21 +8,19 @@
 }
 
 html::-webkit-scrollbar {
-  height: 20px;
-  width: 10px;
+  height: 10px;
+  width: 5px;
   background: #f1f1f1;
   border-radius: 10px;
 }
 
 html::-webkit-scrollbar-thumb {
   background: #999;
-  -webkit-border-radius: 0;
   border-radius: 10px;
 }
 
 html::-webkit-scrollbar-corner {
-  background: #999;
-  border-radius: 10px;
+  background: transparent;
 }
 
 .dark body {
