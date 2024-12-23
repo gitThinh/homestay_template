@@ -7,3 +7,7 @@ export const PATH_AUTH = {
     register: "/register",
     forgot: "forgot-pass"
 }
+
+export const PATH_BUSINESS = {
+    detail: (id: string) => `/homestay/${id}`,
+}

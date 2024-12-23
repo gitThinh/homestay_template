@@ -1,8 +1,9 @@
 <template>
   <div
-    class="hover_image_scale w-full rounded-2xl cursor-pointer overflow-hidden hover:shadow-md border transition-all flex flex-col bg-neutral-50"
+    class="hover_image_scale w-full rounded-2xl cursor-pointer overflow-hidden hover:shadow-md border transition-all first-line:bg-neutral-50"
     v-if="show === 'col'"
   >
+  <NuxtLinkLocale :to="PATH_BUSINESS.detail(props.card_data?.name || '')" class="h-full w-full flex flex-col ">
     <div class="w-full relative">
       <div class="overflow-hidden">
         <NuxtImg
@@ -73,6 +74,7 @@
         </p>
       </div>
     </div>
+  </NuxtLinkLocale>
   </div>
   <div
     class="w-full relative p-3 rounded-2xl cursor-pointer overflow-hidden hover:shadow-md border transition-all grid grid-cols-4 lg:grid-cols-5 gap-3"
@@ -150,6 +152,7 @@
 </template>
 
 <script lang="ts" setup>
+import { PATH_BUSINESS } from "~/constants/path";
 import type { IHomestayCard } from "~/types/homestay";
 const {t} = useI18n();
 
