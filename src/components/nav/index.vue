@@ -5,7 +5,7 @@
       isScrolled
         ? 'bg-primary-800 bg-opacity-90 shadow-sm'
         : 'bg-primary-800 bg-opacity-60'
-    } ${props.isSticky ? 'sticky' : 'fixed'}`"
+    } ${isSticky ? 'sticky' : 'fixed'}`"
   >
     <div
       class="flex items-center justify-between p-3 lg:px-10 lg:py-5 main_container"
@@ -55,6 +55,13 @@
 
 <script lang="ts" setup>
 import { PATH_AUTH, PATH_PAGE } from '~/constants/path';
+
+defineProps({
+  isSticky: {
+    type: Boolean,
+    default: false,
+  }
+})
 
 const isScrolled = ref(false);
 const handleScroll = () => {

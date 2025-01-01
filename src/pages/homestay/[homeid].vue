@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="default-layout">
+  <NuxtLayout name="white-layout">
     <div class="min-h-dvh w-full py-10 container mx-auto">
       <!-- header and gallery -->
       <div class="grid grid-cols-12 gap-5">
@@ -54,7 +54,9 @@
           <div class="listingSection__wrap mt-10">
             <div class="space-y-4">
               <div class="font-semibold text-2xl">Amenities</div>
-              <p class="text-neutral-500">About the property's amenities and services</p>
+              <p class="text-neutral-500">
+                About the property's amenities and services
+              </p>
               <div class="w-20 h-px bg-neutral-100"></div>
               <DetailAmenities :data="detailData" />
             </div>
@@ -101,6 +103,6 @@ useSeoMeta({
 
 <style scoped>
 .listingSection__wrap {
-  @apply w-full flex flex-col sm:rounded-2xl border-b sm:border-t sm:border-l sm:border-r border-neutral-200 dark:border-neutral-700 space-y-6 sm:space-y-8 pb-10 px-0 sm:p-4 xl:p-8;
+  @apply w-full flex flex-col sm:rounded-2xl border-b sm:border-t sm:border-l sm:border-r border-neutral-200 dark:border-neutral-700 space-y-6 sm:space-y-8 pb-10 px-3 sm:p-4 xl:p-8;
 }
 </style>

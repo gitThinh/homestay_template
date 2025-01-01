@@ -45,8 +45,6 @@
 </template>
 
 <script lang="ts" setup>
-import type { PropType } from "vue";
-
 const props = defineProps({
   title: {
     type: String,
