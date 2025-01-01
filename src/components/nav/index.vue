@@ -1,5 +1,12 @@
 <template>
-  <div class="fixed z-50 top-0 w-full transition-all" :class="isScrolled ? 'bg-primary-800 bg-opacity-90 shadow-sm' : 'bg-transparent'">
+  <div
+    class="z-20 top-0 w-full transition-all backdrop-blur-md"
+    :class="`${
+      isScrolled
+        ? 'bg-primary-800 bg-opacity-90 shadow-sm'
+        : 'bg-primary-800 bg-opacity-60'
+    } ${props.isSticky ? 'sticky' : 'fixed'}`"
+  >
     <div
       class="flex items-center justify-between p-3 lg:px-10 lg:py-5 main_container"
     >

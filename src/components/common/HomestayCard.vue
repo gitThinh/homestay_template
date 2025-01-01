@@ -10,7 +10,7 @@
           :src="props.card_data?.thumbnail"
           :alt="props.card_data?.name"
           class="w-full aspect-video object-cover"
-        />
+          />
       </div>
       <button
         class="absolute bottom-0 p-2 rounded-full right-2 bg-neutral-50 translate-y-1/2 border hover:bg-primary-50 transition-colors"
@@ -150,6 +150,7 @@
 </template>
 
 <script lang="ts" setup>
+import type { PropType } from "vue";
 import type { IHomestayCard } from "~/types/homestay";
 
 const props = defineProps({
