@@ -42,11 +42,10 @@
             </div>
           </div>
           <!-- Prices -->
-          <div class="listingSection__wrap mt-10 lg:hiddenx">
-            <div class="space-y-4" id="description">
+          <div class="listingSection__wrap mt-10 lg:!hidden">
+            <div class="space-y-4">
               <div class="font-semibold text-2xl">Prices</div>
               <div class="w-20 h-px bg-neutral-100"></div>
-              <!-- <DetailDescription :data="detailData" /> -->
               <DetailSidebar />
             </div>
           </div>
@@ -103,6 +102,6 @@ useSeoMeta({
 
 <style scoped>
 .listingSection__wrap {
-  @apply w-full flex flex-col sm:rounded-2xl border-b sm:border-t sm:border-l sm:border-r border-neutral-200 dark:border-neutral-700 space-y-6 sm:space-y-8 pb-10 px-3 sm:p-4 xl:p-8;
+  @apply w-full flex flex-col sm:rounded-2xl border-b sm:border-t sm:border-l sm:border-r border-neutral-200 dark:border-neutral-700 space-y-6 sm:space-y-8 pb-10 px-0 sm:p-4 xl:p-8;
 }
 </style>
