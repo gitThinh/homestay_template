@@ -15,7 +15,6 @@ export default defineNuxtConfig({
     'nuxt-headlessui',
     'nuxt-swiper',
   ],
-
   // swiper config
   swiper: {
     bundled: true,

@@ -22,4 +22,37 @@ export interface IUserComment {
     avatar?: string,
     rating: number,
     isVerify: boolean,
+    images?: string[],
+}
+
+export interface IDetailHomeStay {
+    id: string,
+    thumbnail: string,
+    images: string[],
+    address: string,
+    name: string,
+    rating: {
+        star: number,
+        count: number,
+    },
+    price: {
+        value: number,
+        time: number,
+    }[],
+    isWishlist: boolean,
+    contact: {
+        type: string,
+        value: string,
+    },
+    description: string,
+    categories: {
+        icon: string,
+        name: string,
+    }[],
+    review: IUserComment[],
+    utilities: {
+        icon: string,
+        name: string,
+    }[],
+    rule: string[]
 }

@@ -12,7 +12,7 @@
           <h3 class="font-bold text-2xl">{{ data.title }}</h3>
         </div>
         <CommonButton href="#" class="w-max text-black py-4 !px-8 font-medium">
-            {{ $t("common.moreDetail") }}
+            {{ t("common.moreDetail") }}
         </CommonButton>
       </div>
     </div>

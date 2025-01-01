@@ -1,16 +1,17 @@
 <template>
   <div
-    class="hover_image_scale w-full rounded-2xl cursor-pointer overflow-hidden hover:shadow-md border transition-all flex flex-col bg-neutral-50"
+    class="hover_image_scale w-full rounded-2xl cursor-pointer overflow-hidden hover:shadow-md border transition-all first-line:bg-neutral-50"
     v-if="show === 'col'"
   >
+  <NuxtLinkLocale :to="PATH_BUSINESS.detail(props.card_data?.name || '')" class="h-full w-full flex flex-col ">
     <div class="w-full relative">
       <div class="overflow-hidden">
         <NuxtImg
-          loading="lazy"
           :src="props.card_data?.thumbnail"
           :alt="props.card_data?.name"
           class="w-full aspect-video object-cover"
-        />
+          />
+          <!-- :placeholder="[1000, 1000]" -->
       </div>
       <button
         class="absolute bottom-0 p-2 rounded-full right-2 bg-neutral-50 translate-y-1/2 border hover:bg-primary-50 transition-colors"
@@ -66,13 +67,14 @@
           <p class="font-semibold">{{ props.card_data?.price?.[0]?.time }}h</p>
         </div>
         <p>
-          {{ $t("common.from") }}
+          {{ t("common.from") }}
           <span class="font-semibold text-lg"
             >{{ props.card_data?.price?.[0]?.value }}.000đ</span
           >
         </p>
       </div>
     </div>
+  </NuxtLinkLocale>
   </div>
   <div
     class="w-full relative p-3 rounded-2xl cursor-pointer overflow-hidden hover:shadow-md border transition-all grid grid-cols-4 lg:grid-cols-5 gap-3"
@@ -139,7 +141,7 @@
           <p class="font-semibold">{{ props.card_data?.price?.[0]?.time }}h</p>
         </div>
         <p>
-          {{ $t("common.from") }}
+          {{ t("common.from") }}
           <span class="font-semibold text-lg"
             >{{ props.card_data?.price?.[0]?.value }}.000đ</span
           >
@@ -150,7 +152,9 @@
 </template>
 
 <script lang="ts" setup>
+import { PATH_BUSINESS } from "~/constants/path";
 import type { IHomestayCard } from "~/types/homestay";
+const {t} = useI18n();
 
 const props = defineProps({
   card_data: {
