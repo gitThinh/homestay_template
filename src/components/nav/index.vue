@@ -1,6 +1,6 @@
 <template>
   <div
-    class="z-50 top-0 w-full transition-all backdrop-blur-md"
+    class="z-20 top-0 w-full transition-all backdrop-blur-md"
     :class="`${
       isScrolled
         ? 'bg-primary-800 bg-opacity-90 shadow-sm'
