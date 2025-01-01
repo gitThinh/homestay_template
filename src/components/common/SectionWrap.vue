@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-16 space-y-8 px-3">
+  <div class="container py-16 space-y-8">
     <!-- header section -->
     <div
       class="flex items-center"
@@ -23,7 +23,7 @@
         v-if="seeMore && props.position === 'left'"
         class="flex items-center hover:underline"
       >
-        <span>{{ $t("common.seeMore") }}</span>
+        <span>{{ t("common.seeMore") }}</span>
         <NuxtIcon
           name="iconoir:arrow-right"
           class="ml-1 text-sm inline-block"
@@ -45,6 +45,8 @@
 </template>
 
 <script lang="ts" setup>
+const {t} = useI18n();
+
 const props = defineProps({
   title: {
     type: String,

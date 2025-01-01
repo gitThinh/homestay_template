@@ -7,6 +7,22 @@
   padding: 0;
 }
 
+html::-webkit-scrollbar {
+  height: 10px;
+  width: 5px;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 .dark body {
   background-color: #212529;
   color: #F8F9FA;
@@ -19,7 +35,7 @@ body {
 }
 
 .bg_main_image {
-  background-image: url("@@/public/images/homestay.webp");
+  background-image: url("@/public/images/homestay.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% 70%;
@@ -35,6 +51,14 @@ body {
 
 .animation_slideUp {
   animation: slideUp 2s;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @keyframes slideUp {

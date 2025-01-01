@@ -6,16 +6,16 @@
       class="col-span-12 lg:col-span-5 space-y-5 h-full flex justify-center text-center md:text-left flex-col"
     >
       <h3 class="text-3xl font-semibold text-primary-500">
-        {{ $t("homepage.popularThingToDo") }}
+        {{ t("homepage.popularThingToDo") }}
       </h3>
       <p>
-        {{ $t("homepage.loremIpsum") }}
+        {{ t("homepage.loremIpsum") }}
       </p>
       <CommonButton
         href="#"
         class="py-4 bg-primary-400 text-white hover:bg-primary-300"
         ><span class="font-medium">{{
-          $t("common.seeAll")
+          t("common.seeAll")
         }}</span></CommonButton
       >
     </div>

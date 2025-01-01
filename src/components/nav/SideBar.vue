@@ -9,7 +9,7 @@
 
       <HeadlessTransitionRoot
         as="div"
-        class="fixed top-0 left-0 bottom-0 z-10 w-3/4"
+        class="fixed inset-0 z-10"
         enter="transition duration-800 ease-out"
         enter-from="-translate-x-full opacity-30"
         enter-to="translate-x-0 opacity-100"
@@ -17,7 +17,7 @@
         leave-from="translate-x-0 opacity-100"
         leave-to="-translate-x-full opacity-30"
         >
-        <HeadlessPopoverPanel class="h-full rounded-e-lg overflow-hidden bg-neutral-50 shadow-lg ring-1 ring-black/5">
+        <HeadlessPopoverPanel class="h-dvh w-3/4 rounded-e-lg overflow-hidden bg-neutral-50 shadow-lg ring-1 ring-black/5">
             <div class="bg-gray-50 p-4">
               <a
                 href="##"
