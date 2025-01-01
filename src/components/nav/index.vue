@@ -70,13 +70,6 @@ const props = defineProps({
   },
 });
 
-defineProps({
-  isSticky: {
-    type: Boolean,
-    default: false,
-  }
-})
-
 const isScrolled = ref(false);
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 0;
