@@ -1,6 +1,5 @@
 export const PATH_PAGE = {
     root: "/",
-    detail: (id: string) => `/homestay/${id}`
 }
 
 export const PATH_AUTH = {
