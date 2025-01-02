@@ -4,7 +4,7 @@
       class="flex gap-2 items-center px-3 py-1.5 rounded-xl hover:bg-neutral-100"
     >
       <NuxtIcon name="solar:share-outline" class="w-6 h-6 block" />
-      <span class="text-sm font-medium">Share</span>
+      <span class="text-sm font-medium">{{ $t("common.share") }}</span>
     </button>
     <button
       @click="like = !like"
@@ -14,7 +14,7 @@
         :name="like ? 'solar:heart-bold' : 'solar:heart-linear'"
         class="w-6 h-6 block"
       />
-      <span class="text-sm font-medium">{{ like ? "Unlike" : "Like" }}</span>
+      <span class="text-sm font-medium">{{ like ? $t("common.unlike") : $t("common.like") }}</span>
     </button>
   </div>
 </template>

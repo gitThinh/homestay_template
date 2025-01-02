@@ -16,7 +16,14 @@
     "contact": "Contact",
     "support": "Support",
     "moreDetail": "More detail",
-    "yourEmail": "Your email address"
+    "yourEmail": "Your email address",
+    "share": "Share",
+    "like": "Like",
+    "unlike": "Unlike",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "open": "Open",
+    "close": "Close"
   },
   "footer": {
     "followUs": "Follow Us",
@@ -85,5 +92,38 @@
     "alreadyAccount": "Already have an account?",
     "createAccount": "Create an account",
     "dontHaveAccount": "Don't have an account?"
+  },
+
+  "detail": {
+    "description": "Description",
+    "amenities": "Amenities",
+    "amenitiesAbout": "About the property's amenities and services",
+    "contacts": "Contacts",
+    "reviews": "Reviews",
+    "overalRating": "Overall rating",
+    "viewMap": "View map",
+    "viewRoom": "View room",
+    "prices": "Prices"
+  },
+
+  "amenities": {
+    "autoLock": "Auto lock",
+    "bathtub": "Bathtub",
+    "airConditioner": "Air conditioner",
+    "shampoBodySoap": "Shampoo & body soap",
+    "waterEnergy": "Water energy",
+    "tivi": "Tivi",
+    "netflix": "Netflix",
+    "hairDryer": "Hair dryer",
+    "CCTV": "CCTV",
+    "wifi5g": "5G wifi",
+    "pets": "Pets"
+  },
+
+  "contactType": {
+    "email": "Email",
+    "phone": "Phone",
+    "website": "Website",
+    "facebook": "Facebook"
   }
 }

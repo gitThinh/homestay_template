@@ -19,21 +19,21 @@ defineProps<{
 }>();
 
 const Amenities_demos = [
-  { name: "Auto lock", icon: "ion:finger-print" },
-  { name: "Bathtub", icon: "solar:bath-linear" },
-  { name: "Air conditioner", icon: "iconoir:air-conditioner" },
-  { name: "Shampoo, Body soap", icon: "hugeicons:body-soap" },
-  { name: "Water Energy", icon: "hugeicons:water-energy" },
-  { name: "Tivi", icon: "hugeicons:tv-smart" },
-  { name: "Netflix", icon: "arcticons:netflix" },
-  { name: "Hair dryer", icon: "hugeicons:hair-dryer" },
-  { name: "CCTV", icon: "hugeicons:cctv-camera" },
-  { name: "Wifi 5G", icon: "healthicons:network-5g-outline" },
+  { name: t("amenities.autoLock"), icon: "ion:finger-print" },
+  { name: t("amenities.bathtub"), icon: "solar:bath-linear" },
+  { name: t("amenities.airConditioner"), icon: "iconoir:air-conditioner" },
+  { name: t("amenities.shampoBodySoap"), icon: "hugeicons:body-soap" },
+  { name: t("amenities.waterEnergy"), icon: "hugeicons:water-energy" },
+  { name: t("amenities.tivi"), icon: "hugeicons:tv-smart" },
+  { name: t("amenities.netflix"), icon: "arcticons:netflix" },
+  { name: t("amenities.hairDryer"), icon: "hugeicons:hair-dryer" },
+  { name: t("amenities.CCTV"), icon: "hugeicons:cctv-camera" },
+  { name: t("amenities.wifi5g"), icon: "healthicons:network-5g-outline" },
   { name: t("categories.kitchen"), icon: "guidance:kitchen" },
   { name: t("categories.barAndLou"), icon: "la:glass-martini" },
   { name: t("categories.projector"), icon: "solar:projector-outline" },
   { name: t("categories.boardGame"), icon: "fluent:board-games-20-regular" },
-  { name: "Pet", icon: "mdi:pets" },
+  { name: t("amenities.pets"), icon: "mdi:pets" },
 ];
 
 </script>

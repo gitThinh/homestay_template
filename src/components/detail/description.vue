@@ -11,7 +11,7 @@
     class="flex gap-1 mx-auto px-3 py-1.5 rounded-xl shadow-sm border hover:bg-neutral-100 transition-all hover:shadow-md"
     :class="showFullDescription ? 'items-center' : 'items-end'"
   >
-    {{ showFullDescription ? "Show Less" : "Show More" }}
+    {{ showFullDescription ? $t("common.showLess") : $t("common.showMore") }}
     <NuxtIcon
       :name="
         showFullDescription

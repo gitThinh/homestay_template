@@ -1,8 +1,15 @@
 <template>
   <div>
-    <div class="w-16 h-16 rounded-full overflow-hidden border border-neutral-400">
+    <div
+      class="rounded-full overflow-hidden border border-neutral-400"
+      :class="imageSize ? imageSize : 'w-12 h-12 sm:w-16 sm:h-16'"
+    >
       <NuxtImg v-if="imgUrl" :src="imgUrl" class="w-full h-full object-cover" />
-      <div class="h-full w-full flex items-center justify-center" :style="{backgroundColor: avatarColor }" v-else>
+      <div
+        class="h-full w-full flex items-center justify-center"
+        :style="{ backgroundColor: avatarColor }"
+        v-else
+      >
         <p class="font-bold text-xl text-neutral-100">{{ userChar }}</p>
       </div>
     </div>
@@ -11,9 +18,10 @@
 
 <script lang="ts" setup>
 const props = defineProps<{
-  name?: string,
+  name?: string;
   imgUrl?: string;
   checked?: boolean;
+  imageSize?: string;
 }>();
 
 const userName = ref(props.name || "User");
@@ -48,5 +56,6 @@ const avatarColors = [
   "#E208A7",
 ];
 
-const avatarColor = avatarColors[userChar.value.charCodeAt(0) % avatarColors.length];
+const avatarColor =
+  avatarColors[userChar.value.charCodeAt(0) % avatarColors.length];
 </script>

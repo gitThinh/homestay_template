@@ -36,7 +36,7 @@
           <!-- description -->
           <div class="listingSection__wrap mt-10">
             <div class="space-y-4" id="description">
-              <div class="font-semibold text-2xl">Description</div>
+              <div class="font-semibold text-2xl">{{ t("detail.description") }}</div>
               <div class="w-20 h-px bg-neutral-100"></div>
               <DetailDescription :data="detailData" />
             </div>
@@ -44,7 +44,7 @@
           <!-- Prices -->
           <div class="listingSection__wrap mt-10 lg:!hidden">
             <div class="space-y-4">
-              <div class="font-semibold text-2xl">Prices</div>
+              <div class="font-semibold text-2xl">{{ t("detail.prices") }}</div>
               <div class="w-20 h-px bg-neutral-100"></div>
               <DetailSidebar />
             </div>
@@ -52,9 +52,9 @@
           <!-- Amenities -->
           <div class="listingSection__wrap mt-10">
             <div class="space-y-4">
-              <div class="font-semibold text-2xl">Amenities</div>
+              <div class="font-semibold text-2xl">{{ t("detail.amenities") }}</div>
               <p class="text-neutral-500">
-                About the property's amenities and services
+                {{ t("detail.amenitiesAbout") }}
               </p>
               <div class="w-20 h-px bg-neutral-100"></div>
               <DetailAmenities :data="detailData" />
@@ -63,7 +63,7 @@
           <!-- contacts -->
           <div class="listingSection__wrap mt-10">
             <div class="space-y-4">
-              <div class="font-semibold text-2xl">Contacts</div>
+              <div class="font-semibold text-2xl">{{ t("detail.contacts") }}</div>
               <div class="w-20 h-px bg-neutral-100"></div>
               <DetailContact :data="detailData" />
             </div>
@@ -71,7 +71,7 @@
           <!-- reviews -->
           <div class="listingSection__wrap mt-10">
             <div class="space-y-4">
-              <div class="font-semibold text-2xl">Reviews</div>
+              <div class="font-semibold text-2xl">{{ t("detail.reviews") }}</div>
               <div class="w-20 h-px bg-neutral-100"></div>
               <DetailReviews :data="detailData" />
             </div>
@@ -89,6 +89,8 @@
 
 <script lang="ts" setup>
 import { detailHomeStay } from "~/data/detail";
+
+const {t} = useI18n();
 
 // const route = useRoute();
 // const homeid = route.params.homeid;

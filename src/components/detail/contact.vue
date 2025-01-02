@@ -5,7 +5,7 @@
       :key="index"
       class="flex justify-between items-center px-4 py-2 gap-2 rounded-xl odd:bg-neutral-100"
     >
-      <div class="font-medium capitalize">{{ contact.type }}:</div>
+      <div class="font-medium">{{ $t(`contactType.${contact.type}`) }}:</div>
       <div class="line-clamp-1">
         <a href="#" class="text-blue-600 hover:underline">{{
           contact.value

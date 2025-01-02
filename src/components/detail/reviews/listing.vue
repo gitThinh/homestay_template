@@ -7,11 +7,12 @@
           <div class="flex items-center justify-between">
             <span class="flex items-center gap-2">
               <p class="user_name font-medium text-lg">{{ comment.name }}</p>
-              <CommonBadget :color="colorType?.[comment.type]" class="!py-1 !px-2 capitalize" v-if="comment.type && colorType?.[comment.type]">{{ comment.type }}</CommonBadget>
+              <CommonBadget :color="colorType?.[comment.type]" class="!py-1 !px-2 capitalize hidden sm:block" v-if="comment.type && colorType?.[comment.type]">{{ comment.type }}</CommonBadget>
             </span>
-            <CommonRatingStar :star="comment.rating" class="gap-1" />
+            <CommonRatingStar :star="comment.rating" class="gap-1 hidden sm:block" />
           </div>
           <p class="text-sm text-neutral-500">{{ converDate(comment.date, locale) }}</p>
+          <CommonRatingStar :star="comment.rating" class="gap-1 sm:hidden" />
           <p v-html="comment.comment" class="my-2"></p>
           <DetailReviewsImageGallery :images="comment.images" v-if="comment.images?.length"/>
         </div>

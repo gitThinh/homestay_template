@@ -79,7 +79,7 @@ export const detailHomeStay: IDetailHomeStay = {
   type: "Homestay",
   openState: {
     isOpen: true,
-    type: "Open 24/7",
+    type: "open",
   },
   review: [
     {

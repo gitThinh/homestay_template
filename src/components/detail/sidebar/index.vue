@@ -15,7 +15,7 @@
           @click="handleShowGallery"
           class="text-sm text-blue-500 hover:underline outline-none"
         >
-          View room
+          {{ $t("detail.viewRoom") }}
         </button>
         <DetailHeaderAndGalleryListing
           :images="pickedRoom.albums"
