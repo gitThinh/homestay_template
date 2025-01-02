@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative block">
     <HeadlessMenu as="div">
       <HeadlessMenuButton class="flex flex-row items-center px-4 py-2 gap-1 rounded-full btn_nude">
           <p>{{ t("languages") }}</p>

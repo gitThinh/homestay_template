@@ -1,7 +1,7 @@
 <template>
   <button
     class="px-4 py-2 rounded-lg shadow-sm bg-neutral-50 hover:bg-neutral-100 transition-colors"
-    :class="disabled ? 'opacity-80' : ''"
+    :class="disabled ? disabledClass : ''"
     v-bind="$attrs"
     @click="$emit('clickBtn', $event)"
     :disabled="props.disabled"
@@ -20,6 +20,10 @@ const props = defineProps({
   disabled: {
     type: Boolean,
     default: false,
+  },
+  disabledClass: {
+    type: String,
+    default: 'opactity-80',
   },
   isLoading: {
     type: Boolean,

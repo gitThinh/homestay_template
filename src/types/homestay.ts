@@ -15,7 +15,7 @@ export interface IHomestayCard {
 }
 
 export interface IUserComment {
-    id: string,
+    userId: string,
     name: string,
     type?: string,
     comment?: string,
@@ -23,6 +23,7 @@ export interface IUserComment {
     rating: number,
     isVerify: boolean,
     images?: string[],
+    date: string,
 }
 
 export interface IDetailHomeStay {
@@ -34,6 +35,9 @@ export interface IDetailHomeStay {
     rating: {
         star: number,
         count: number,
+        overall: {
+            [key: string]: number,
+        }
     },
     price: {
         value: number,
@@ -43,7 +47,7 @@ export interface IDetailHomeStay {
     contact: {
         type: string,
         value: string,
-    },
+    }[],
     description: string,
     categories: {
         icon: string,
@@ -54,5 +58,10 @@ export interface IDetailHomeStay {
         icon: string,
         name: string,
     }[],
-    rule: string[]
+    rule: string[],
+    type: string,
+    openState?: {
+        isOpen: boolean,
+        type: string,
+    }
 }

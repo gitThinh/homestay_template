@@ -29,64 +29,7 @@
     </div>
   </div>
 
-  <HeadlessTransitionRoot
-    as="template"
-    enter-active-class="duration-300 ease-out"
-    enter-from-class="opacity-0"
-    enter-to-class="opacity-100"
-    leave-active-class="duration-200 ease-in"
-    leave-from-class="opacity-100"
-    leave-to-class="opacity-0"
-    :show="openGallery"
-    @close="handleCloseGallery"
-  >
-    <HeadlessDialog
-      as="div"
-      class="fixed inset-0 z-50"
-      @close="handleCloseGallery"
-    >
-      <div
-        class="fixed inset-0 bg-white rounded-lg text-left shadow-xl transform transition-all p-4 pt-10 pb-7"
-      >
-        <HeadlessDialogTitle as="div" class="fixed top-2 right-2 w-full flex justify-between items-center">
-          <div class=""></div>
-          <NuxtIcon
-            name="meteor-icons:xmark"
-            class="w-6 h-6 xl:h-8 xl:w-8 block cursor-pointer"
-            @click="handleCloseGallery"
-          />
-        </HeadlessDialogTitle>
-        <div class="container h-full overflow-y-auto lg:flex lg:items-center lg:justify-center">
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 min-[1440px]:grid-cols-4 gap-4">
-            <div v-for="(img, index) in galleryImgs" :key="index" class="">
-              <NuxtImg
-                :src="img"
-                class="object-cover aspect-video rounded-xl cursor-pointer w-full"
-                :class="`${
-                  selectedImg === index ? 'border-2 border-primary-500' : ''
-                }`"
-                @click="selectedImg = index"
-              />
-            </div>
-              <!-- <ClientOnly>
-                <swiper-container ref="containerRef" :init="false" class="w-full swiper">
-                  <swiper-slide v-for="(img, index) in galleryImgs" :key="index" class="h-full">
-                    <NuxtImg
-                      :src="img"
-                      class="object-cover aspect-video rounded-xl cursor-pointer w-full h-40"
-                      :class="`${
-                        selectedImg === index ? 'border-2 border-primary-500' : ''
-                      }`"
-                      @click="selectedImg = index"
-                    />
-                  </swiper-slide>
-                </swiper-container>
-              </ClientOnly> -->
-          </div>
-        </div>
-      </div>
-    </HeadlessDialog>
-  </HeadlessTransitionRoot>
+  <DetailHeaderAndGalleryPreview :images="galleryImgs" :show="openGallery" :handle-close="handleCloseGallery" />
 </template>
 
 <script lang="ts" setup>
@@ -109,12 +52,6 @@ const handleCloseGallery = () => {
   openGallery.value = false;
   selectedImg.value = 0;
 };
-// const handlePrevImg = () => {
-//   selectedImg.value = selectedImg.value === 0 ? 0 : selectedImg.value - 1;
-// };
-// const handleNextImg = () => {
-//   selectedImg.value = selectedImg.value === galleryImgsLength - 1 ? selectedImg.value : selectedImg.value + 1;
-// };
 
 const containerRef = ref(null);
 useSwiper(containerRef, {

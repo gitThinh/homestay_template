@@ -16,7 +16,14 @@
     "contact": "Liên hệ",
     "support": "Hỗ trợ",
     "moreDetail": "Chi tiết",
-    "yourEmail": "Email của bạn"
+    "yourEmail": "Email của bạn",
+    "share": "Chia sẻ",
+    "like": "Thích",
+    "unlike": "Bỏ thích",
+    "showMore": "Xem thêm",
+    "showLess": "Ẩn bớt",
+    "open": "Mở cửa",
+    "close": "Đóng cửa"
   },
   "footer": {
     "followUs": "Theo dõi",
@@ -86,5 +93,38 @@
     "alreadyAccount": "Bạn đã có tài khoản?",
     "createAccount": "Tạo tài khoản",
     "dontHaveAccount": "Bạn chưa có tài khoản?"
+  },
+  
+  "detail": {
+    "description": "Mô tả",
+    "amenities": "Tiện nghi",
+    "amenitiesAbout": "Các tiện nghi và dịch vụ",
+    "contacts": "Liên hệ",
+    "reviews": "Đánh giá",
+    "overalRating": "Đánh giá tổng thể",
+    "viewMap": "Xem bản đồ",
+    "viewRoom": "Xem phòng",
+    "prices": "Giá cả"
+  },
+
+  "amenities": {
+    "autoLock": "Cửa tự động",
+    "bathtub": "Bồn tắm",
+    "airConditioner": "Điều hòa",
+    "shampoBodySoap": "Dầu gội & sữa tắm",
+    "waterEnergy": "Máy nước nóng",
+    "tivi": "Tivi",
+    "netflix": "Netflix",
+    "hairDryer": "Máy sấy tóc",
+    "CCTV": "CCTV",
+    "wifi5g": "5G wifi",
+    "pets": "Thú cưng"
+  },
+
+  "contactType": {
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "website": "Trang web",
+    "facebook": "Facebook"
   }
 }

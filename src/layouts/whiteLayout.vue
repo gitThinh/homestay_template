@@ -1,5 +1,5 @@
 <template>
-  <Nav class="!bg-primary-800 !bg-opacity-90 !shadow-sm" />
+  <Nav :is-sticky="true" />
   <slot></slot>
   <Footer />
 </template>

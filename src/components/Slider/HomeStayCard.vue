@@ -75,15 +75,16 @@ const props = defineProps({
 });
 
 const containerRef = ref(null);
+
 useSwiper(containerRef, {
   autoHeight: true,
   slidesPerView: 1,
   spaceBetween: 20,
-  autoplay: props.delayAuto
-    ? {
-        delay: props.delayAuto,
-      }
-    : false,
+  // autoplay: props.delayAuto
+  //   ? {
+  //       delay: props.delayAuto,
+  //     }
+  //   : false,
   loop: props.loop,
   navigation: {
     enabled: true,
