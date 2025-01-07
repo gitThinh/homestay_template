@@ -8,7 +8,7 @@
       </div>
       <div class="text-left">
         <h3 class="font-semibold">When</h3>
-        <ClientOnly >
+        <ClientOnly>
           <template #default>
             <RangePicker
               size="small"
@@ -19,7 +19,7 @@
             />
           </template>
           <template #fallback>
-            <p>choose date range</p>
+            <p class="text-neutral-500 text-sm">choose date range</p>
           </template>
         </ClientOnly>
       </div>
@@ -40,7 +40,9 @@ const emit = defineEmits<{
 }>();
 
 // data
-const dateRange = ref<[string, string] | [dayjs.Dayjs, dayjs.Dayjs] | undefined>(undefined);
+const dateRange = ref<
+  [string, string] | [dayjs.Dayjs, dayjs.Dayjs] | undefined
+>(undefined);
 
 // methods
 const handlePickDateRange = (dateRange: [Date, Date] | null) => {
@@ -48,11 +50,18 @@ const handlePickDateRange = (dateRange: [Date, Date] | null) => {
   emit("pick-date-range", dateRange);
 };
 
-const onDateChange = (value: [string, string] | [dayjs.Dayjs, dayjs.Dayjs], dateString: [string, string]) => {
+const onDateChange = (
+  value: [string, string] | [dayjs.Dayjs, dayjs.Dayjs],
+  dateString: [string, string]
+) => {
   if (Array.isArray(value) && value.length === 2) {
     const [start, end] = value;
-    const startDate = dayjs.isDayjs(start) ? start.toDate() : dayjs(start, "DD-MM-YYYY").toDate();
-    const endDate = dayjs.isDayjs(end) ? end.toDate() : dayjs(end, "DD-MM-YYYY").toDate();
+    const startDate = dayjs.isDayjs(start)
+      ? start.toDate()
+      : dayjs(start, "DD-MM-YYYY").toDate();
+    const endDate = dayjs.isDayjs(end)
+      ? end.toDate()
+      : dayjs(end, "DD-MM-YYYY").toDate();
     handlePickDateRange([startDate, endDate]);
   } else {
     handlePickDateRange(null);
