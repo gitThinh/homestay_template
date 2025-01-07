@@ -2,6 +2,9 @@
   <Nav :is-sticky="true" />
   <slot></slot>
   <Footer />
+  <div class="bg-black">
+    <FooterBottom />
+  </div>
 </template>
 
 <script lang="ts" setup>

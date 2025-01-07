@@ -38,14 +38,17 @@
         v-if="seeMore && props.position === 'center'"
         class=""
       >
-        <CommonButton class="!bg-primary-400 text-neutral-50 !rounded-full font-medium text-lg border hover:!bg-primary-300">See more</CommonButton>
+        <CommonButton
+          class="!bg-primary-400 text-neutral-50 !rounded-full font-medium text-lg border hover:!bg-primary-300"
+          >See more</CommonButton
+        >
       </NuxtLink>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-const {t} = useI18n();
+const { t } = useI18n();
 
 const props = defineProps({
   title: {

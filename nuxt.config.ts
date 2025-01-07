@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     'nuxt-headlessui',
     'nuxt-swiper',
+    '@ant-design-vue/nuxt',
   ],
   // swiper config
   swiper: {
