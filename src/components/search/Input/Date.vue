@@ -8,13 +8,20 @@
       </div>
       <div class="text-left">
         <h3 class="font-semibold">When</h3>
-        <RangePicker
-          size="small"
-          format="DD-MM-YYYY"
-          placement="topRight"
-          v-model:value="dateRange"
-          @change="onDateChange"
-        />
+        <ClientOnly >
+          <template #default>
+            <RangePicker
+              size="small"
+              format="DD-MM-YYYY"
+              placement="topRight"
+              v-model:value="dateRange"
+              @change="onDateChange"
+            />
+          </template>
+          <template #fallback>
+            <p>choose date range</p>
+          </template>
+        </ClientOnly>
       </div>
     </div>
   </div>
