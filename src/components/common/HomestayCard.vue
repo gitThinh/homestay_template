@@ -52,7 +52,7 @@
           <div class="flex justify-between items-center">
             <div class="flex flex-row items-center gap-1">
               <NuxtIcon name="mdi-light:clock" class="text-xl" />
-              <p class="font-semibold">
+              <p class="md:font-semibold font-medium">
                 {{ props.card_data?.price?.[0]?.time }}h
               </p>
             </div>
