@@ -23,7 +23,11 @@
     "showMore": "Show more",
     "showLess": "Show less",
     "open": "Open",
-    "close": "Close"
+    "close": "Close",
+    "results": "results",
+    "type": "Type",
+    "reset": "Reset",
+    "apply": "Apply"
   },
   "footer": {
     "followUs": "Follow Us",
@@ -41,7 +45,7 @@
     "mobileApp": "Mobile Apps"
   },
   "homepage": {
-    "chooseCountry": "Choose a Country For Your Next Adventure?",
+    "chooseCountry": "Choose a Location For Your Next Adventure?",
     "orSelectType": "Or browse the selected type",
     "popularLocation": "Popular location",
     "popularThingToDo": "Popular things to do",
@@ -125,5 +129,24 @@
     "phone": "Phone",
     "website": "Website",
     "facebook": "Facebook"
+  },
+
+  "searchPage": {
+    "title": "Enjoy this life",
+    "description": "Discover new experiences, explore unique spaces, and give yourself time to rest.",
+    "sortBy": "Sort by",
+    "type": "Type",
+    "rating": "rating",
+    "location": "location",
+    "filter": "filter",
+    "searchfilter": "Search filter",
+    "star": "star"
+  },
+
+  "nav": {
+    "home": "Home",
+    "search": "Search",
+    "user": "User",
+    "menu": "Menu"
   }
 }

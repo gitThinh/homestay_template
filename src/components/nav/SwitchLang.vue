@@ -6,12 +6,13 @@
           <NuxtIcon name="flowbite:angle-down-outline" class="block w-5 h-5" />
       </HeadlessMenuButton>
       <HeadlessTransitionRoot
-        enter-active-class="transition duration-100 ease-out"
-        enter-from-class="transform scale-95 opacity-0"
-        enter-to-class="transform scale-100 opacity-100"
-        leave-active-class="transition duration-75 ease-in"
-        leave-from-class="transform scale-100 opacity-100"
-        leave-to-class="transform scale-95 opacity-0"
+        as="template"
+        enter-active="transition duration-100 ease-out"
+        enter-from="transform scale-95 opacity-0"
+        enter-to="transform scale-100 opacity-100"
+        leave-active="transition duration-75 ease-in"
+        leave-from="transform scale-100 opacity-100"
+        leave-to="transform scale-95 opacity-0"
       >
         <HeadlessMenuItems
           class="absolute -bottom-2 right-0 w-max translate-y-full bg-neutral-50 border rounded-lg p-4"

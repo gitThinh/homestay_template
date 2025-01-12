@@ -80,11 +80,11 @@ useSwiper(containerRef, {
   autoHeight: true,
   slidesPerView: 1,
   spaceBetween: 20,
-  // autoplay: props.delayAuto
-  //   ? {
-  //       delay: props.delayAuto,
-  //     }
-  //   : false,
+  autoplay: props.delayAuto
+    ? {
+        delay: props.delayAuto,
+      }
+    : false,
   loop: props.loop,
   navigation: {
     enabled: true,
@@ -92,7 +92,7 @@ useSwiper(containerRef, {
     prevEl: ".prevbtn",
   },
   breakpoints: {
-    640: {
+    426: {
       slidesPerView: 2,
     },
     1024: {

@@ -26,20 +26,18 @@
         </div>
       </HeadlessMenuButton>
       <HeadlessTransitionRoot
-        enter-active-class="transition duration-100 ease-out"
-        enter-from-class="transform scale-95 opacity-0"
-        enter-to-class="transform scale-100 opacity-100"
-        leave-active-class="transition duration-75 ease-in"
-        leave-from-class="transform scale-100 opacity-100"
-        leave-to-class="transform scale-95 opacity-0"
+        as="template"
+        enter-active="transition duration-100 ease-out"
+        enter-from="transform scale-95 opacity-0"
+        enter-to="transform scale-100 opacity-100"
+        leave-active="transition duration-75 ease-in"
+        leave-from="transform scale-100 opacity-100"
+        leave-to="transform scale-95 opacity-0"
       >
         <HeadlessMenuItems
           class="absolute z-50 -bottom-1 lg:-bottom-4 left-0 w-full translate-y-full bg-neutral-50 border rounded-lg p-3"
         >
-          <HeadlessMenuItem
-            v-for="people in peopleData"
-            :key="people.id"
-          >
+          <HeadlessMenuItem v-for="people in peopleData" :key="people.id">
             <div
               class="cursor-pointer hover:bg-neutral-200 py-1 px-2 rounded-lg"
               @click="() => handlePickLocation(people.value)"
@@ -59,8 +57,8 @@
 const pickedPeople = ref("");
 const valuePickedPeople = computed(() => {
   const pick = peopleData.find((item) => item.value === pickedPeople.value);
-  return pick?.name || '';
-})
+  return pick?.name || "";
+});
 
 // emit
 const emit = defineEmits<{
@@ -77,7 +75,7 @@ const peopleData = [
 
 // methods
 const handlePickLocation = (value: string) => {
-    pickedPeople.value = value;
+  pickedPeople.value = value;
   emit("pick-people", value);
 };
 </script>
