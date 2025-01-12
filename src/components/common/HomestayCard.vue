@@ -12,7 +12,7 @@
           <NuxtImg
             :src="props.card_data?.thumbnail"
             :alt="props.card_data?.name"
-            class="w-full aspect-video object-cover"
+            class="w-full aspect-square sm:aspect-video object-cover"
           />
           <!-- :placeholder="[1000, 1000]" -->
         </div>
@@ -20,15 +20,15 @@
         <div class="p-3 space-y-2 flex flex-col flex-1">
           <div class="flex-1 space-y-2">
             <h3
-              class="line-clamp-2 font-semibold text-lg md:text-xl cursor-pointer hover:underline"
+              class="line-clamp-2 font-medium sm:font-semibold sm:text-lg md:text-xl cursor-pointer hover:underline"
             >
               {{ props.card_data?.name }}
             </h3>
             <!-- address -->
-            <div class="flex flex-row space-x-1 items-center">
+            <div class="flex flex-row items-center">
               <NuxtIcon
                 name="ph:map-pin-light"
-                class="w-4 h-4 block flex-shrink-0"
+                class="w-4 h-4 sm:block flex-shrink-0 hidden ml-1"
               />
               <p class="text-neutral-500 line-clamp-1 sm:line-clamp-2 text-sm">
                 {{ props.card_data?.address }}
@@ -39,7 +39,9 @@
               <CommonRatingStar
                 :star="props?.card_data?.rating?.star"
                 size="text-base"
+                class="hidden sm:block"
               />
+              <NuxtIcon name="ion:star" class="text-yellow-500 text-base sm:hidden"/>
               <p class="text-neutral-600 text-sm">
                 {{ props?.card_data?.rating?.star }} ({{
                   props.card_data?.rating?.count
@@ -52,7 +54,7 @@
           <div class="flex justify-between items-center">
             <div class="flex flex-row items-center gap-1">
               <NuxtIcon name="mdi-light:clock" class="text-xl" />
-              <p class="font-semibold">
+              <p class="md:font-semibold font-medium">
                 {{ props.card_data?.price?.[0]?.time }}h
               </p>
             </div>
@@ -60,7 +62,7 @@
               <p class="hidden sm:block">
                 {{ $t("common.from") }}
               </p>
-              <span class="font-semibold"
+              <span class="md:font-semibold font-medium"
                 >{{ props.card_data?.price?.[0]?.value }}.000đ</span
               >
             </span>
