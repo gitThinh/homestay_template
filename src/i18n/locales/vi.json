@@ -23,7 +23,11 @@
     "showMore": "Xem thêm",
     "showLess": "Ẩn bớt",
     "open": "Mở cửa",
-    "close": "Đóng cửa"
+    "close": "Đóng cửa",
+    "results": "kết quả",
+    "type": "Kiểu",
+    "reset": "Thiết lập lại",
+    "apply": "Áp dụng"
   },
   "footer": {
     "followUs": "Theo dõi",
@@ -41,7 +45,7 @@
     "mobileApp": "Ứng dụng điện thoại"
   },
   "homepage": {
-    "chooseCountry": "Chọn quốc gia cho chuyến phiêu lưu tiếp theo của bạn",
+    "chooseCountry": "Chọn địa điểm cho chuyến phiêu lưu tiếp theo của bạn",
     "orSelectType": "Hoặc duyệt theo danh mục",
     "popularLocation": "Địa điểm nổi tiếng",
     "popularThingToDo": "Hoạt động phổ biến",
@@ -71,7 +75,6 @@
 
     "subToMailList": "Đăng ký danh sách email để luôn được cập nhật thông tin mới nhất",
     "loremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-
   },
   "categories": {
     "kitchen": "Khu bếp",
@@ -94,7 +97,7 @@
     "createAccount": "Tạo tài khoản",
     "dontHaveAccount": "Bạn chưa có tài khoản?"
   },
-  
+
   "detail": {
     "description": "Mô tả",
     "amenities": "Tiện nghi",
@@ -126,5 +129,24 @@
     "phone": "Số điện thoại",
     "website": "Trang web",
     "facebook": "Facebook"
+  },
+
+  "searchPage": {
+    "title": "Tận hưởng cuộc sống này",
+    "description": "Khám phá những trải nghiệm mới, những không gian khác lạ, và dành thời gian để nghỉ ngơi.",
+    "sortBy": "Sắp xếp",
+    "type": "Loại địa điểm",
+    "rating": "Đánh giá",
+    "location": "Địa điểm",
+    "filter": "lọc",
+    "searchfilter": "Bộ lọc tìm kiếm",
+    "star": "sao"
+  },
+
+  "nav": {
+    "home": "Trang chủ",
+    "search": "Tìm kiếm",
+    "user": "Tôi",
+    "menu": "Danh mục"
   }
 }

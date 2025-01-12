@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="white-layout">
+  <NuxtLayout name="search-nav-layout">
     <div class="min-h-dvh w-full py-10 container mx-auto">
       <!-- header and gallery -->
       <div class="grid grid-cols-12 gap-5">

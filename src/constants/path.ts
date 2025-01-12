@@ -10,4 +10,5 @@ export const PATH_AUTH = {
 
 export const PATH_BUSINESS = {
     detail: (id: string) => `/homestay/${id}`,
+    search: "/search"
 }

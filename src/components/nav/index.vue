@@ -1,6 +1,6 @@
 <template>
   <div
-    class="z-20 top-0 w-full transition-all backdrop-blur-md"
+    class="hidden md:block z-20 top-0 w-full transition-all backdrop-blur-md"
     :class="`${
       isScrolled
         ? 'bg-primary-800 bg-opacity-90 shadow-sm'
@@ -16,9 +16,6 @@
           <h1 class="text-4xl font-bold text-neutral-50">LOGO</h1>
         </NuxtLinkLocale>
       </div>
-
-      <!-- Nav Sidebar Mobile -->
-      <NavSideBar class="block md:hidden" />
 
       <!-- logo mobile -->
       <NuxtLinkLocale :to="PATH_PAGE.root">
@@ -41,22 +38,9 @@
           >{{ t("logIn") }}</CommonButton
         >
       </div>
-
-      <!-- user login mobile -->
-      <div class="block md:hidden">
-        <!-- redirect to login page -->
-        <NuxtLinkLocale
-          :to="PATH_AUTH.login"
-          class="block p-1 rounded-full btn_nude"
-        >
-          <NuxtIcon
-            name="la:user-solid"
-            class="w-8 h-8 block text-neutral-50"
-          />
-        </NuxtLinkLocale>
-      </div>
     </div>
   </div>
+  <NavMobile />
 </template>
 
 <script lang="ts" setup>

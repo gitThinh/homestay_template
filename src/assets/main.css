@@ -41,6 +41,13 @@ body {
   background-position: 70% 70%;
 }
 
+.bg_beach_image {
+  background-image: url("@/public/images/beach.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .main_container {
   @apply container mx-auto;
 }
