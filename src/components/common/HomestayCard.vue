@@ -60,7 +60,7 @@
               <p class="hidden sm:block">
                 {{ $t("common.from") }}
               </p>
-              <span class="font-semibold"
+              <span class="md:font-semibold font-medium"
                 >{{ props.card_data?.price?.[0]?.value }}.000đ</span
               >
             </span>

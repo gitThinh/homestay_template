@@ -2,7 +2,10 @@
   <div
     class="md:hidden z-20 border sticky top-0 w-full transition-all shadow-sm backdrop-blur-md bg-white border-t py-3 px-5"
   >
-  <div class="flex flex-row-reverse gap-4 items-center">
+  <div class="flex flex-row gap-4 items-center">
+    <div class="cursor-pointer" @click="router.back()">
+      <NuxtIcon name="ion:arrow-back" class="h-6 w-6 min-w-5 block"/>
+    </div>
     <div
       class="flex flex-1 border border-orange-400 min-w-80 items-center flex-row gap-2 bg-neutral-100 rounded-lg"
     >
@@ -22,9 +25,6 @@
       >
         <NuxtIcon name="radix-icons:magnifying-glass" class="w-5 h-5 block text-white" />
       </NuxtLinkLocale>
-    </div>
-    <div class="cursor-pointer" @click="router.back()">
-      <NuxtIcon name="ion:arrow-back" class="h-6 w-6 block"/>
     </div>
   </div>
   </div>

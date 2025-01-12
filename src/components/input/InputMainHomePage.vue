@@ -4,7 +4,7 @@
   >
     <NuxtIcon
       name="ph:map-pin-light"
-      class="w-6 h-6 block text-neutral-900 ml-2"
+      class="w-6 h-6 min-w-5 block text-neutral-900 ml-2"
     />
     <input
       type="text"
