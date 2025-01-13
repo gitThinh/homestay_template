@@ -20,7 +20,7 @@
         <div class="p-3 space-y-2 flex flex-col flex-1">
           <div class="flex-1 space-y-2">
             <h3
-              class="line-clamp-2 font-medium sm:font-semibold sm:text-lg md:text-xl cursor-pointer hover:underline"
+              class="line-clamp-1 min-[425px]:line-clamp-2 font-medium sm:font-semibold sm:text-lg md:text-xl cursor-pointer hover:underline"
             >
               {{ props.card_data?.name }}
             </h3>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-3 flex min-w-80 w-4/5 md:w-3/5 lg:w-2/5 mx-auto items-center flex-row gap-2 bg-neutral-50 rounded-full"
+    class="p-3 flex w-full min-[425px]:w-4/5 md:w-3/5 lg:w-2/5 mx-auto items-center flex-row gap-2 bg-neutral-50 rounded-full"
   >
     <NuxtIcon
       name="ph:map-pin-light"
@@ -10,7 +10,7 @@
       type="text"
       v-model="searchQuery"
       :placeholder="t('common.location')"
-      class="outline-none bg-transparent text-neutral-800 flex-1"
+      class="outline-none bg-transparent text-neutral-800 flex-1 min-w-0"
     />
     <NuxtLinkLocale
       :href="{ path: PATH_BUSINESS.search, query: { q: searchQuery } }"
