@@ -16,8 +16,8 @@
     </div>
     <div class="main_container my-8 w-full grid grid-cols-12 gap-5 lg:gap-8">
       <div class="col-span-12 lg:col-span-3 h-max">
-        <SearchSidebar class="hidden md:block" />
-        <SearchSidebarMobile class="md:hidden" />
+        <SearchSidebar class="hidden lg:block" />
+        <SearchSidebarMobile class="lg:hidden" />
       </div>
       <div class="col-span-12 lg:col-span-9 space-y-6">
         <div class="flex justify-between items-center px-1">

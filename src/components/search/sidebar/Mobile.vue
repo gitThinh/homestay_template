@@ -9,13 +9,13 @@
     </CommonButton>
     <HeadlessDialog
       :open="showFilters"
-      class="fixed inset-0 z-40 md:hidden"
+      class="fixed inset-0 z-40 lg:hidden"
       @close="handleCloseFilters"
     >
       <HeadlessDialogOverlay class="w-full h-full bg-neutral-600 opacity-30" />
       <HeadlessDialogPanel
         as="div"
-        class="absolute flex flex-col h-dvh overflow-y-auto top-0 bottom-0 right-0 w-5/6 bg-neutral-50"
+        class="absolute flex flex-col h-dvh overflow-y-auto top-0 bottom-0 right-0 w-5/6 sm:w-3/4 md:w-1/2 bg-neutral-50"
       >
         <div class="sticky top-0 left-0 w-full shadow-sm p-3 bg-neutral-50">
           <div class="flex justify-between items-center">
