@@ -1,7 +1,7 @@
 <template>
   <div
     :class="props.positionImg ? 'flex-col lg:flex-row ' : 'flex-col-reverse lg:flex-row-reverse'"
-    class="flex gap-10 lg:gap-0 px-0 lg:px-5"
+    class="flex gap-10 lg:gap-0 px-0 lg:px-5 py-16 lg:py-0"
   >
     <div
       class="content w-full lg:w-1/2 flex items-center"

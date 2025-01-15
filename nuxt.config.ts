@@ -61,13 +61,15 @@ export default defineNuxtConfig({
         code: 'en',
         name: 'English',
         iso: 'en-US',
-        file: 'en.json'
+        file: 'en.json',
+        flag: '/images/flag/ic_flag_en.svg'
       },
       {
         code: 'vi',
         name: 'Tiếng Việt',
         iso: 'vi-VN',
-        file: 'vi.json'
+        file: 'vi.json',
+        flag: '/images/flag/ic_flag_vn.svg'
       },
     ],
     defaultLocale: 'vi', // default lang

@@ -1,6 +1,7 @@
 <template>
   <div class="w-full px-4 py-6 border rounded-xl shadow-sm space-y-3">
     <HeadlessDisclosure
+      :default-open="filter.mainTitle === 'type'"
       v-slot="{ open }"
       v-for="filter in filterData"
       :key="filter.id"

@@ -34,6 +34,7 @@
 import { PATH_BUSINESS } from "~/constants/path";
 const { t } = useI18n();
 const router = useRouter();
+const route = useRoute();
 
-const searchQuery = ref("");
+const searchQuery = ref(route.query.q ?? '');
 </script>
