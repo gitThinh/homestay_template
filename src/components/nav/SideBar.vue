@@ -42,7 +42,7 @@
         "
       >
         <HeadlessDialogPanel
-          class="fixed z-10 bottom-0 h-dvh w-4/5 p-4 rounded-s-lg overflow-hidden bg-neutral-50 shadow-lg ring-1 ring-black/5"
+          class="fixed z-10 bottom-0 h-dvh w-5/6 sm:w-4/5 p-2 sm:p-4 rounded-s-lg overflow-hidden bg-neutral-50 shadow-lg ring-1 ring-black/5"
           :class="sideMenu === 'left' ? 'left-0' : 'right-0'"
         >
           <div class="flex flex-col h-full gap-5">
@@ -60,7 +60,7 @@
             <div
               class="flex-1 flex w-full flex-col justify-between overflow-y-auto"
             >
-              <div class="flex-1 px-3 py-5 divide-y">
+              <div class="flex-1 px-3 py-3 sm:py-5 divide-y">
                 <NavChildrenNavMobile
                   v-for="data in NAV_DATA"
                   :key="data.id"
@@ -81,16 +81,16 @@
                 </div>
                 <div class="space-x-2 flex flex-row items-center">
                   <span class="font-medium"> Email: </span>
-                  <a href="#" class="hover:text-blue-600 transition-colors"
+                  <a href="#" class="hover:text-blue-600 line-clamp-1 transition-colors"
                     >Contact_abc@gmail.com</a
                   >
                 </div>
               </div>
             </div>
             <!-- change language and login logout -->
-            <div class="flex flex-row justify-between items-center">
+            <div class="flex flex-col-reverse gap-2 min-[426px]:flex-row justify-between items-end min-[426px]:items-center">
               <CommonButtonPrimary :href="PATH_AUTH.login"
-                class="font-medium capitalize w-max !px-10 !py-3"
+                class="font-medium capitalize w-full min-[426px]:w-max !px-10 !py-3"
               >
                 {{ t("logout") }}
               </CommonButtonPrimary>
@@ -160,4 +160,6 @@ const handleCloseMenu = () => {
 const handleOpenMenu = () => {
   isShowMenu.value = true;
 };
+
+
 </script>

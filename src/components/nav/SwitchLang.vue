@@ -17,9 +17,9 @@
         leave-to="transform scale-95 opacity-0"
       >
         <HeadlessMenuItems
-          :class="[positionMenu[props.position] ,'absolute w-max bg-neutral-50 border rounded-lg p-4']"
+          :class="[positionMenu[props.position] ,'absolute w-max bg-neutral-50 border rounded-lg p-2 sm:p-4']"
         >
-          <div class="flex flex-col gap-2 md:flex-row md:space-x-2">
+          <div class="flex flex-col md:flex-row md:space-x-2">
             <HeadlessMenuItem v-for="item in locales" :key="item.code">
               <button
                 class="rounded-lg px-4 py-2 hover:bg-neutral-100 hover:bg-opacity-70 transition-all"
