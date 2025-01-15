@@ -13,7 +13,7 @@
       <div class="space-x-3 hidden md:block">
         <!-- logo desktop -->
         <NuxtLinkLocale :to="PATH_PAGE.root">
-          <h1 class="text-4xl font-bold text-neutral-50">LOGO</h1>
+          <h1 class="text-4xl font-bold text-neutral-50 logo_white">LOGO</h1>
         </NuxtLinkLocale>
       </div>
 

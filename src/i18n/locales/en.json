@@ -6,6 +6,7 @@
   },
   "signUp": "Sign Up",
   "logIn": "Log In",
+  "logout": "Log out",
   "forgotPassword": "Forgot password",
   "common": {
     "location": "Location",

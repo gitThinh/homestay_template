@@ -1,68 +1,144 @@
 <template>
-  <HeadlessPopover v-slot="{ open }">
-    <HeadlessPopoverButton class="outline-none btn_nude rounded-full">
-      <div class="flex flex-col justify-center items-center">
-        <NuxtIcon
-          name="tabler:menu-3"
-          class="w-6 h-6 block"
-          :class="iconColor"
-        />
-        <span class="capitalize font-medium text-[10px]" :class="iconColor">{{
-          $t("nav.menu")
-        }}</span>
-      </div>
-    </HeadlessPopoverButton>
-
-    <HeadlessTransitionRoot
-      as="template"
-      enter="transition duration-800 ease-out"
-      :enter-from="
-        sideMenu === 'left'
-          ? '-translate-x-full opacity-30'
-          : 'translate-x-full opacity-30'
-      "
-      :enter-to="
-        sideMenu === 'left'
-          ? 'translate-x-0 opacity-100'
-          : 'translate-x-0 opacity-100'
-      "
-      leave="transition duration-800 ease-in"
-      :leave-from="
-        sideMenu === 'left'
-          ? 'translate-x-0 opacity-100'
-          : 'translate-x-0 opacity-100'
-      "
-      :leave-to="
-        sideMenu === 'left'
-          ? '-translate-x-full opacity-30'
-          : 'translate-x-full opacity-30'
-      "
+  <button class="outline-none btn_nude rounded-full" @click="handleOpenMenu">
+    <div class="flex flex-col justify-center items-center">
+      <NuxtIcon name="tabler:menu-3" class="w-6 h-6 block" :class="iconColor" />
+      <span class="capitalize font-medium text-[10px]" :class="iconColor">{{
+        $t("nav.menu")
+      }}</span>
+    </div>
+  </button>
+  <HeadlessTransitionRoot :show="isShowMenu" appear as="template">
+    <HeadlessDialog
+      as="div"
+      class="fixed h-dvh w-full overflow-y-auto z-40"
+      @close="handleCloseMenu"
     >
-      <HeadlessPopoverPanel
-        class="fixed z-20 bottom-0 h-dvh w-3/4 rounded-s-lg overflow-hidden bg-neutral-50 shadow-lg ring-1 ring-black/5"
-        :class="sideMenu === 'left' ? 'left-0' : 'right-0'"
+      <HeadlessDialogOverlay
+        class="fixed inset-0 z-0 bg-neutral-600 bg-opacity-30"
+      />
+      <HeadlessTransitionChild
+        as="template"
+        enter="transition duration-800 ease-out"
+        :enter-from="
+          sideMenu === 'left'
+            ? '-translate-x-full opacity-30'
+            : 'translate-x-full opacity-30'
+        "
+        :enter-to="
+          sideMenu === 'left'
+            ? 'translate-x-0 opacity-100'
+            : 'translate-x-0 opacity-100'
+        "
+        leave="transition duration-800 ease-in"
+        :leave-from="
+          sideMenu === 'left'
+            ? 'translate-x-0 opacity-100'
+            : 'translate-x-0 opacity-100'
+        "
+        :leave-to="
+          sideMenu === 'left'
+            ? '-translate-x-full opacity-30'
+            : 'translate-x-full opacity-30'
+        "
       >
-        <div class="bg-gray-50 p-4">
-          <a
-            href="##"
-            class="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
-          >
-            <span class="flex items-center">
-              <span class="text-sm font-medium text-gray-900">
-                Documentation
-              </span>
-            </span>
-            <span class="block text-sm text-gray-500">
-              Start integrating products and tools
-            </span>
-          </a>
-        </div>
-      </HeadlessPopoverPanel>
-    </HeadlessTransitionRoot>
-  </HeadlessPopover>
+        <HeadlessDialogPanel
+          class="fixed z-10 bottom-0 h-dvh w-4/5 p-4 rounded-s-lg overflow-hidden bg-neutral-50 shadow-lg ring-1 ring-black/5"
+          :class="sideMenu === 'left' ? 'left-0' : 'right-0'"
+        >
+          <div class="flex flex-col h-full gap-5">
+            <!-- close button and logo company -->
+            <div class="sticky top-0 flex flex-row justify-between items-start">
+              <button
+                class="rounded-full p-1 hover:bg-neutral-100"
+                @click="handleCloseMenu"
+              >
+                <NuxtIcon name="meteor-icons:xmark" class="w-6 h-6 block" />
+              </button>
+              <h1 class="text-4xl font-bold logo_black cursor-default">LOGO</h1>
+            </div>
+            <!-- main nav -->
+            <div
+              class="flex-1 flex w-full flex-col justify-between overflow-y-auto"
+            >
+              <div class="flex-1 px-3 py-5 divide-y">
+                <NavChildrenNavMobile
+                  v-for="data in NAV_DATA"
+                  :key="data.id"
+                  :nav-data="{
+                    title: `${data.name}`,
+                    url: `${data.url}`,
+                    isBlank: data.isBlank,
+                  }"
+                  :children="data.children"
+                />
+              </div>
+              <div class="space-y-2 px-3">
+                <div class="space-x-2 flex flex-row items-center">
+                  <span class="font-medium"> Hotline: </span>
+                  <a href="#" class="hover:text-blue-600 transition-colors"
+                    >0123456xxx</a
+                  >
+                </div>
+                <div class="space-x-2 flex flex-row items-center">
+                  <span class="font-medium"> Email: </span>
+                  <a href="#" class="hover:text-blue-600 transition-colors"
+                    >Contact_abc@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- change language and login logout -->
+            <div class="flex flex-row justify-between items-center">
+              <CommonButtonPrimary :href="PATH_AUTH.login"
+                class="font-medium capitalize w-max !px-10 !py-3"
+              >
+                {{ t("logout") }}
+              </CommonButtonPrimary>
+              <NavSwitchLang
+                position="topright"
+                button-class="!text-black border shadow-sm rounded-lg hover:!bg-neutral-100"
+              />
+            </div>
+          </div>
+        </HeadlessDialogPanel>
+      </HeadlessTransitionChild>
+    </HeadlessDialog>
+  </HeadlessTransitionRoot>
 </template>
 
 <script lang="ts" setup>
+import { PATH_AUTH, PATH_BUSINESS } from "~/constants/path";
+
+//data
+const NAV_DATA = [
+  { id: generateIds("nav_"), name: "about us", url: "#" },
+  { id: generateIds("nav_"), name: "Contacts", url: "#" },
+  {
+    id: generateIds("nav_"),
+    name: "pages",
+    children: [
+      {
+        id: generateIds("navchild_"),
+        name: "search",
+        url: PATH_BUSINESS.search,
+      },
+      {
+        id: generateIds("navchild_"),
+        name: "detail",
+        url: PATH_BUSINESS.detail("ids"),
+      },
+      { id: generateIds("navchild_"), name: "page 1", url: "#" },
+    ],
+  },
+  {
+    id: generateIds("nav_"),
+    name: "source code",
+    url: "https://github.com/gitThinh/homestay_template",
+    isBlank: true,
+  },
+  { id: generateIds("nav_"), name: "setting", url: "#" },
+];
+
 defineProps({
   iconColor: {
     type: String,
@@ -73,4 +149,15 @@ defineProps({
     default: "left",
   },
 });
+
+const { t } = useI18n();
+
+const isShowMenu = ref(false);
+
+const handleCloseMenu = () => {
+  isShowMenu.value = false;
+};
+const handleOpenMenu = () => {
+  isShowMenu.value = true;
+};
 </script>

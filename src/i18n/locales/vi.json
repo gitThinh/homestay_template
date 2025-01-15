@@ -6,6 +6,7 @@
   },
   "signUp": "Đăng ký",
   "logIn": "Đăng nhập",
+  "logout": "Đăng xuất",
   "forgotPassword": "Quên mật khẩu",
   "common": {
     "location": "Địa điểm",
