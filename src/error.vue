@@ -6,7 +6,7 @@
       <div class="w-full md:w-1/2">
         <NuxtImg
           src="/images/img_404.svg"
-          class="w-full object-cover max-w-md mx-auto"
+          class="w-full object-cover max-w-screen-sm mx-auto"
         />
       </div>
       <div
