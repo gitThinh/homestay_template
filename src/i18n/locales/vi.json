@@ -149,5 +149,12 @@
     "search": "Tìm kiếm",
     "user": "Tôi",
     "menu": "Danh mục"
+  },
+
+  "error": {
+    "title": "Không tìm thấy",
+    "message": "Oops! Có vẻ đường dẫn này không tồn tại.",
+    "description": "Trang bạn đang tìm không có sẵn. Hãy thử tìm kiếm lại hoặc sử dụng nút quay lại.",
+    "backToHome": "Trở về trang chủ"
   }
 }

@@ -4,14 +4,14 @@
       :to="navData?.url ?? '#'"
       :target="navData.isBlank ? '_blank' : '_self'"
       v-if="!children?.length"
-      class="cursor-pointer text-xl font-semibold capitalize py-2 block"
+      class="cursor-pointer text-lg font-semibold capitalize py-2 block"
       >{{ navData.title }}
     </NuxtLinkLocale>
     <HeadlessDisclosure v-slot="{ open }" v-else>
       <HeadlessDisclosureButton
         class="flex w-full flex-row justify-between items-center py-2"
       >
-        <p class="text-xl font-semibold capitalize">{{ navData.title }}</p>
+        <p class="text-lg font-semibold capitalize">{{ navData.title }}</p>
         <NuxtIcon
           name="flowbite:angle-down-outline"
           class="h-5 w-5 text-neutral-400 transition-all"
