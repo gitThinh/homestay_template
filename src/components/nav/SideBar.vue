@@ -81,15 +81,20 @@
                 </div>
                 <div class="space-x-2 flex flex-row items-center">
                   <span class="font-medium"> Email: </span>
-                  <a href="#" class="hover:text-blue-600 line-clamp-1 transition-colors"
+                  <a
+                    href="#"
+                    class="hover:text-blue-600 line-clamp-1 transition-colors"
                     >Contact_abc@gmail.com</a
                   >
                 </div>
               </div>
             </div>
             <!-- change language and login logout -->
-            <div class="flex flex-col-reverse gap-2 min-[426px]:flex-row justify-between items-end min-[426px]:items-center">
-              <CommonButtonPrimary :href="PATH_AUTH.login"
+            <div
+              class="flex flex-col-reverse gap-2 min-[426px]:flex-row justify-between items-end min-[426px]:items-center"
+            >
+              <CommonButtonPrimary
+                :href="PATH_AUTH.login"
                 class="font-medium capitalize w-full min-[426px]:w-max !px-10 !py-3"
               >
                 {{ t("logout") }}
@@ -107,37 +112,7 @@
 </template>
 
 <script lang="ts" setup>
-import { PATH_AUTH, PATH_BUSINESS } from "~/constants/path";
-
-//data
-const NAV_DATA = [
-  { id: generateIds("nav_"), name: "about us", url: "#" },
-  { id: generateIds("nav_"), name: "Contacts", url: "#" },
-  {
-    id: generateIds("nav_"),
-    name: "pages",
-    children: [
-      {
-        id: generateIds("navchild_"),
-        name: "search",
-        url: PATH_BUSINESS.search,
-      },
-      {
-        id: generateIds("navchild_"),
-        name: "detail",
-        url: PATH_BUSINESS.detail("ids"),
-      },
-      { id: generateIds("navchild_"), name: "page 1", url: "#" },
-    ],
-  },
-  {
-    id: generateIds("nav_"),
-    name: "source code",
-    url: "https://github.com/gitThinh/homestay_template",
-    isBlank: true,
-  },
-  { id: generateIds("nav_"), name: "setting", url: "#" },
-];
+import { PATH_AUTH, PATH_BUSINESS, PATH_PAGE } from "~/constants/path";
 
 defineProps({
   iconColor: {
@@ -152,6 +127,40 @@ defineProps({
 
 const { t } = useI18n();
 
+//data
+const NAV_DATA = [
+  { id: generateIds("nav_"), name: t("footer.aboutUs"), url: "#" },
+  {
+    id: generateIds("nav_"),
+    name: t("contactPage.contact"),
+    url: PATH_PAGE.contact,
+  },
+  {
+    id: generateIds("nav_"),
+    name: t("nav.pages"),
+    children: [
+      {
+        id: generateIds("navchild_"),
+        name: t("nav.search"),
+        url: PATH_BUSINESS.search,
+      },
+      {
+        id: generateIds("navchild_"),
+        name: "Homestay",
+        url: PATH_BUSINESS.detail("ids"),
+      },
+      { id: generateIds("navchild_"), name: t('error.title'), url: "/notfound" },
+    ],
+  },
+  {
+    id: generateIds("nav_"),
+    name: t("nav.sourceCode"),
+    url: "https://github.com/gitThinh/homestay_template",
+    isBlank: true,
+  },
+  { id: generateIds("nav_"), name: t("nav.setting"), url: "#" },
+];
+
 const isShowMenu = ref(false);
 
 const handleCloseMenu = () => {
@@ -160,6 +169,4 @@ const handleCloseMenu = () => {
 const handleOpenMenu = () => {
   isShowMenu.value = true;
 };
-
-
 </script>

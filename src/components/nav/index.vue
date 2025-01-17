@@ -32,11 +32,12 @@
           >{{ t("signUp") }}</CommonButton
         >
         <!-- redirect to login page -->
-        <CommonButton
-          class="!rounded-full font-semibold shadow-md"
+        <CommonButtonPrimary
+          class="!rounded-full w-max font-semibold shadow-md"
           :href="PATH_AUTH.login"
-          >{{ t("logIn") }}</CommonButton
         >
+          {{ t("logIn") }}
+        </CommonButtonPrimary>
       </div>
     </div>
   </div>

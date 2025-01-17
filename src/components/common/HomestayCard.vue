@@ -58,10 +58,10 @@
                 {{ props.card_data?.price?.[0]?.time }}h
               </p>
             </div>
-            <span>
-              <p class="hidden sm:block">
+            <span class="">
+              <span class="hidden sm:inline-block mr-1">
                 {{ $t("common.from") }}
-              </p>
+              </span>
               <span class="md:font-semibold font-medium"
                 >{{ props.card_data?.price?.[0]?.value }}.000đ</span
               >

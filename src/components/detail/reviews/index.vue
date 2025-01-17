@@ -3,7 +3,7 @@
     <div
       class="flex flex-col gap-5 justify-center items-center sm:flex-row sm:justify-evenly"
     >
-      <div class="space-y-2 text-center sm:text-left">
+      <div class="space-y-2 text-center">
         <h3 class="font-medium text-xl">{{ $t("detail.overalRating") }}</h3>
         <CommonRatingStar :star="data.rating.star" class="gap-1 justify-center" />
         <p class="text-neutral-700 lowercase">
