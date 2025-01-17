@@ -5,6 +5,7 @@
     >
       <div class="w-full md:w-1/2">
         <NuxtImg
+          loading="lazy"
           src="/images/img_404.svg"
           class="w-full object-cover max-w-screen-sm mx-auto"
         />
@@ -34,6 +35,8 @@
 <script lang="ts" setup>
 import { PATH_PAGE } from "./constants/path";
 const { t } = useI18n();
+
+window.scrollTo(0, 0)
 
 useSeoMeta({
   title: t("error.title"),

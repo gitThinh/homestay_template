@@ -1,5 +1,6 @@
 export const PATH_PAGE = {
     root: "/",
+    contact: "/contact"
 }
 
 export const PATH_AUTH = {

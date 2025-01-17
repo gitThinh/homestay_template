@@ -28,7 +28,8 @@
     "results": "kết quả",
     "type": "Kiểu",
     "reset": "Thiết lập lại",
-    "apply": "Áp dụng"
+    "apply": "Áp dụng",
+    "title": "Tiêu đề"
   },
   "footer": {
     "followUs": "Theo dõi",
@@ -148,7 +149,10 @@
     "home": "Trang chủ",
     "search": "Tìm kiếm",
     "user": "Tôi",
-    "menu": "Danh mục"
+    "menu": "Danh mục",
+    "pages":"Trang",
+    "sourceCode": "Mã nguồn",
+    "setting": "Cài đặt"
   },
 
   "error": {
@@ -156,5 +160,14 @@
     "message": "Oops! Có vẻ đường dẫn này không tồn tại.",
     "description": "Trang bạn đang tìm không có sẵn. Hãy thử tìm kiếm lại hoặc sử dụng nút quay lại.",
     "backToHome": "Trở về trang chủ"
+  },
+
+  "contactPage": {
+    "contact": "Liên hệ",
+    "contactWUs": "Liên hệ với chúng tôi",
+    "name": "Tên",
+    "phone": "Số điện thoại",
+    "message": "Lời nhắn",
+    "sendMessage": "Gửi lời nhắn"
   }
 }

@@ -28,7 +28,8 @@
     "results": "results",
     "type": "Type",
     "reset": "Reset",
-    "apply": "Apply"
+    "apply": "Apply",
+    "title": "Title"
   },
   "footer": {
     "followUs": "Follow Us",
@@ -148,14 +149,25 @@
     "home": "Home",
     "search": "Search",
     "user": "User",
-    "menu": "Menu"
+    "menu": "Menu",
+    "pages":"pages",
+    "sourceCode": "Source code",
+    "setting": "Setting"
   },
 
   "error": {
-  "title": "Not Found",
-  "message": "Oops! It seems this path doesn't exist.",
-  "description": "The page you're looking for isn't available. Try searching again or use the back button.",
-  "backToHome": "Back to home"
-}
+    "title": "Not Found",
+    "message": "Oops! It seems this path doesn't exist.",
+    "description": "The page you're looking for isn't available. Try searching again or use the back button.",
+    "backToHome": "Back to home"
+  },
 
+  "contactPage": {
+    "contact": "Contact",
+    "contactWUs": "Contact with us",
+    "name": "Name",
+    "phone": "Phone",
+    "message": "Message",
+    "sendMessage": "Send message"
+  }
 }
