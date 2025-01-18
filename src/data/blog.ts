@@ -1,35 +1,47 @@
-import type { Iblog } from "~/types/blog";
+import type { Iblog, IBlogCard } from "~/types/blog";
 
-export const BLOG_LISTING = [
+export type IBlogCardType = 'blog' | 'news'
+
+export const BLOG_LISTING: IBlogCard[] = [
   {
     id: generateIds("blog_"),
+    type: "blog",
     thumbnail: "/images/blog.webp",
     title: "Top 4 khách sạn tốt nhất tại Đà Lạt cho kỳ nghỉ của bạn",
-    date: "2025-01-15",
+    description: "Đà Lạt, với khung cảnh hữu tình và khí hậu tuyệt vời được thiên nhiên ban tặng khiến cho bất cứ du khách nào cũng phải say đắm vì vẻ đẹp nơi đây. Với mức chi phí cũng không hề đắt đỏ, bạn có thể lựa chọn cho mình một khách sạn 5 sao có tiện nghi và chất lượng đẳng cấp quốc tế, giúp cho chuyến nghỉ dưỡng được thêm phần trọn vẹn, hoàn hảo. MIXI VIVU xin bật mí 4 khách sạn 5 sao tại Đà Lạt mà bạn nhất định nên trải nghiệm khi tới đây nhé!",
+    date: "2025-01-16",
   },
   {
     id: generateIds("blog_"),
-    thumbnail: "/images/blog.webp",
-    title: "Best hotels in Hanoi for a luxurious stay",
-    date: "2025-01-01",
+    type: "news",
+    thumbnail: "/images/blog2.webp",
+    title: "Lễ hội pháo hoa quốc tế Đà Nẵng năm 2025 với chủ đề “Đà Nẵng–Kỷ nguyên mới”",
+    description: 'Lễ hội Pháo hoa quốc tế Đà Nẵng năm 2025 với chủ đề “Đà Nẵng–Kỷ nguyên mới” sẽ diễn ra từ ngày 31/5-12/7/2025. Đây là một trong những thông tin được đưa ra tại Hội nghị triển khai kế hoạch phát triển du lịch thành phố Đà Nẵng năm 2025 diễn ra sáng 27/12.',
+    date: "2025-01-08",
   },
   {
     id: generateIds("blog_"),
-    thumbnail: "/images/blog.webp",
-    title: "Top 10 tourist attractions in Ho Chi Minh City",
-    date: "2024-12-24",
+    type: "blog",
+    thumbnail: "/images/blog3.webp",
+    title: "Vì sao nhiều resort, khách sạn biển Đà Nẵng kín phòng giữa mùa lạnh?",
+    description: 'Dù giữa mùa lạnh và thời tiết tại TP.Đà Nẵng mưa dầm dề kéo dài cả tháng nhưng các khách sạn 4-5 sao, resort mặt tiền biển Đà Nẵng vẫn kín phòng, công suất đến 90%.',
+    date: "2025-01-02",
   },
   {
     id: generateIds("blog_"),
-    thumbnail: "/images/blog.webp",
-    title: "A guide to the best street food in Vietnam",
-    date: "2024-12-20",
+    type: "blog",
+    thumbnail: "/images/blog4.webp",
+    title: "[Ảnh] Một thoáng Sơn Trà",
+    description: 'Bán đảo Sơn Trà (phường Thọ Quang, quận Sơn Trà, thành phố Đà Nẵng) được ví như "viên ngọc xanh" quý báu và là niềm tự hào của người dân Đà thành với hệ sinh thái đa dạng, những bãi biển tuyệt đẹp, nhiều điểm tham quan và dịch vụ giải trí... Không cần đi đâu xa, bản thân Sơn Trà đã là một công viên khổng lồ giữa lòng đô thị sôi động bậc nhất miền trung.',
+    date: "2024-10-27",
   },
   {
     id: generateIds("blog_"),
-    thumbnail: "/images/blog.webp",
-    title: "Exploring the beauty of Ha Long Bay",
-    date: "2024-12-15",
+    type: "news",
+    thumbnail: "/images/blog5.webp",
+    title: "Đà Nẵng khai trương Đường hoa biển",
+    description: "hiều tối nay (5/7) Đà Nẵng chính thức khai trương, đưa vào sử dụng Đường hoa biển Đà Nẵng - Danang Beach - Flowers walk. Dự án do Ban quản lý bán đảo Sơn Trà và các bãi biển du lịch Đà Nẵng phối hợp các đơn vị tổ chức, trang trí nhằm phục vụ người dân, du khách.",
+    date: "2024-07-05",
   },
 ];
 

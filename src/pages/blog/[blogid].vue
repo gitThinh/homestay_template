@@ -22,9 +22,14 @@
       </div>
       <!-- content blog -->
       <div class="container max-w-screen-lg my-16">
-        <CommonBadget :border="true" color="green" class="mb-5">
-          {{ converDate(BLOG_DATA.date, locale) }}
-        </CommonBadget>
+        <div class="mb-5 flex gap-3">
+          <CommonBadget :border="true" color="green" class="capitalize rounded-lg">
+            {{ BLOG_DATA.type }}
+          </CommonBadget>
+          <CommonBadget color="blue">
+            {{ converDate(BLOG_DATA.date, locale) }}
+          </CommonBadget>
+        </div>
         <p class="mb-8 italic" v-if="BLOG_DATA.description">
           {{ BLOG_DATA.description }}
         </p>

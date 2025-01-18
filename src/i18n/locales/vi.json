@@ -29,7 +29,8 @@
     "type": "Kiểu",
     "reset": "Thiết lập lại",
     "apply": "Áp dụng",
-    "title": "Tiêu đề"
+    "title": "Tiêu đề",
+    "all": "Tất cả"
   },
   "footer": {
     "followUs": "Theo dõi",
@@ -152,7 +153,8 @@
     "menu": "Danh mục",
     "pages":"Trang",
     "sourceCode": "Mã nguồn",
-    "setting": "Cài đặt"
+    "setting": "Cài đặt",
+    "blogList": "Danh sách blog"
   },
 
   "error": {
@@ -169,5 +171,12 @@
     "phone": "Số điện thoại",
     "message": "Lời nhắn",
     "sendMessage": "Gửi lời nhắn"
+  },
+
+  "blogPage": {
+    "blog": "Blog",
+    "news": "Tin tức",
+    "headerTitle": "Chỉ dẫn bạn khám phá muôn nơi",
+    "headerDesc": "Tìm cảm hứng, chỉ dẫn và câu chuyện về điểm bạn muốn đến."
   }
 }

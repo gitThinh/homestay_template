@@ -63,7 +63,9 @@
     </div>
 
     <!-- Section event/sales -->
-    <HomeEventSales />
+    <CommonSectionWrap :title="t('blogPage.blog')" titleClass="!text-3xl" :seeMore="PATH_PAGE.blogList">
+      <HomeBlogList />
+    </CommonSectionWrap>
 
     <!-- Section send mail -->
     <div class="section_sendmail">
@@ -73,6 +75,7 @@
 </template>
 
 <script lang="ts" setup>
+import { PATH_PAGE } from "~/constants/path";
 import { CARD_DATA } from "~/data/homepage";
 const {t} = useI18n();
 

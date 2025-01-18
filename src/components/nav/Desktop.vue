@@ -17,12 +17,12 @@
           <NuxtIcon name="flowbite:angle-down-outline" class="block w-4 h-4" />
         </button>
         <div
-          class="nav_dropdown_menu border w-max hidden p-3 rounded-lg absolute transition-all top-full left-0 bg-white grid-cols-1"
+          class="nav_dropdown_menu border w-max hidden p-4 gap-3 rounded-lg absolute transition-all top-full left-0 bg-white grid-cols-2"
         >
           <NuxtLinkLocale
             :to="child.url"
             :target="child.isBlank ? '_blank' : '_self'"
-            class="px-3 py-1.5 block font-medium hover:underline hover:text-primary-400 cursor-pointer"
+            class="px-3 py-0.5 block font-medium hover:underline hover:text-primary-400 cursor-pointer"
             v-for="child in nav.children"
           >
             <span>{{ child.name }}</span>
@@ -42,6 +42,12 @@ const NAV_DATA: INav[] = [
   // { id: generateIds("nav_"), name: t("footer.aboutUs"), url: "#" },
   {
     id: generateIds("nav_"),
+    name: t("nav.sourceCode"),
+    url: "https://github.com/gitThinh/homestay_template",
+    isBlank: true,
+  },
+  {
+    id: generateIds("nav_"),
     name: t("nav.pages"),
     children: [
       {
@@ -52,28 +58,31 @@ const NAV_DATA: INav[] = [
       {
         id: generateIds("navchild_"),
         name: "Homestay",
-        url: PATH_BUSINESS.detail("ids"),
+        url: PATH_BUSINESS.detail("homestay_id"),
       },
-      { id: generateIds("navchild_"), name: "Blog", url: "/blog" },
+      {
+        id: generateIds("navchild_"),
+        name: t("blogPage.blog"),
+        url: PATH_PAGE.blogDetail("blog-detail"),
+      },
+      {
+        id: generateIds("navchild_"),
+        name: t("nav.blogList"),
+        url: PATH_PAGE.blogList,
+      },
       {
         id: generateIds("navchild_"),
         name: t("error.title"),
         url: "/notfound",
       },
     ],
-  },  
+  },
   {
     id: generateIds("nav_"),
     name: t("contactPage.contact"),
     url: PATH_PAGE.contact,
   },
-  {
-    id: generateIds("nav_"),
-    name: t("nav.sourceCode"),
-    url: "https://github.com/gitThinh/homestay_template",
-    isBlank: true,
-  },
-  // { id: generateIds("nav_"), name: t("nav.setting"), url: "#" },
+  { id: generateIds("nav_"), name: t("Blog"), url: PATH_PAGE.blogList },
 ];
 </script>
 

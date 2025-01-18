@@ -130,7 +130,8 @@ const { t } = useI18n();
 
 //data
 const NAV_DATA: INav[] = [
-  { id: generateIds("nav_"), name: t("footer.aboutUs"), url: "#" },
+  // { id: generateIds("nav_"), name: t("footer.aboutUs"), url: "#" },
+  { id: generateIds("nav_"), name: t("blogPage.blog"), url: PATH_PAGE.blogList },
   {
     id: generateIds("nav_"),
     name: t("contactPage.contact"),
@@ -150,8 +151,21 @@ const NAV_DATA: INav[] = [
         name: "Homestay",
         url: PATH_BUSINESS.detail("ids"),
       },
-      { id: generateIds("navchild_"), name: 'Blog', url: "/blog" },
-      { id: generateIds("navchild_"), name: t('error.title'), url: "/notfound" },
+      {
+        id: generateIds("navchild_"),
+        name: "Blog",
+        url: PATH_PAGE.blogDetail("blog-detail"),
+      },
+      {
+        id: generateIds("navchild_"),
+        name: t("nav.blogList"),
+        url: PATH_PAGE.blogList,
+      },
+      {
+        id: generateIds("navchild_"),
+        name: t("error.title"),
+        url: "/notfound",
+      },
     ],
   },
   {

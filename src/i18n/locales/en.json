@@ -29,7 +29,8 @@
     "type": "Type",
     "reset": "Reset",
     "apply": "Apply",
-    "title": "Title"
+    "title": "Title",
+    "all": "All"
   },
   "footer": {
     "followUs": "Follow Us",
@@ -150,9 +151,10 @@
     "search": "Search",
     "user": "User",
     "menu": "Menu",
-    "pages":"pages",
+    "pages": "pages",
     "sourceCode": "Source code",
-    "setting": "Setting"
+    "setting": "Setting",
+    "blogList": "Blog list"
   },
 
   "error": {
@@ -169,5 +171,12 @@
     "phone": "Phone",
     "message": "Message",
     "sendMessage": "Send message"
+  },
+
+  "blogPage": {
+    "blog": "Blog",
+    "news": "News",
+    "headerTitle": "Your guide to exploring everywhere",
+    "headerDesc": "Find inspiration, guides, and stories about the places you want to visit."
   }
 }
