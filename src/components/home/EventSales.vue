@@ -11,8 +11,11 @@
           <p>{{ data.desc }}</p>
           <h3 class="font-bold text-2xl">{{ data.title }}</h3>
         </div>
-        <CommonButton href="#" class="w-max text-black py-4 !px-8 font-medium">
-            {{ t("common.moreDetail") }}
+        <CommonButton
+          :href="PATH_PAGE.blogDetail(data.id)"
+          class="w-max text-black py-4 !px-8 font-medium"
+        >
+          {{ t("common.moreDetail") }}
         </CommonButton>
       </div>
     </div>
@@ -20,26 +23,27 @@
 </template>
 
 <script lang="ts" setup>
-const {t} = useI18n();
+import { PATH_PAGE } from "~/constants/path";
+
+const { t } = useI18n();
 const EVENT_SALES_DATA = [
   {
-    id: 1,
-    desc: t("homepage.enjoyCool"),
-    title: t("homepage.bestDeal"),
-    bgImg:
-      "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Fcta%2F5%2F1.jpg&w=640&q=75",
+    id: "blog_1",
+    title: "Top 4 khách sạn tốt nhất tại Đà Lạt cho kỳ nghỉ của bạn",
+    // desc: t("homepage.enjoyCool"),
+    bgImg: "/images/blog.webp",
   },
   {
-    id: 2,
-    desc: t("homepage.dontForgetCheck"),
+    id: "blog_2",
     title: t("homepage.allTimeFavorite"),
+    desc: t("homepage.dontForgetCheck"),
     bgImg:
       "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Fcta%2F5%2F2.jpg&w=640&q=75",
   },
   {
-    id: 3,
-    desc: `80% ${t("homepage.discount")}`,
+    id: "blog_3",
     title: t("homepage.discountOfEurope"),
+    desc: `80% ${t("homepage.discount")}`,
     bgImg:
       "https://viatour-nextjs.vercel.app/_next/image?url=%2Fimg%2Fcta%2F5%2F3.jpg&w=640&q=75",
   },
@@ -48,8 +52,8 @@ const EVENT_SALES_DATA = [
 
 <style>
 .backgroundImg {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>

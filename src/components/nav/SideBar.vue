@@ -10,7 +10,7 @@
   <HeadlessTransitionRoot :show="isShowMenu" appear as="template">
     <HeadlessDialog
       as="div"
-      class="fixed h-dvh w-full overflow-y-auto z-40"
+      class="fixed md:hidden h-dvh w-full overflow-y-auto z-40"
       @close="handleCloseMenu"
     >
       <HeadlessDialogOverlay
@@ -113,6 +113,7 @@
 
 <script lang="ts" setup>
 import { PATH_AUTH, PATH_BUSINESS, PATH_PAGE } from "~/constants/path";
+import type { INav } from "~/types";
 
 defineProps({
   iconColor: {
@@ -128,7 +129,7 @@ defineProps({
 const { t } = useI18n();
 
 //data
-const NAV_DATA = [
+const NAV_DATA: INav[] = [
   { id: generateIds("nav_"), name: t("footer.aboutUs"), url: "#" },
   {
     id: generateIds("nav_"),
@@ -149,6 +150,7 @@ const NAV_DATA = [
         name: "Homestay",
         url: PATH_BUSINESS.detail("ids"),
       },
+      { id: generateIds("navchild_"), name: 'Blog', url: "/blog" },
       { id: generateIds("navchild_"), name: t('error.title'), url: "/notfound" },
     ],
   },
@@ -158,7 +160,7 @@ const NAV_DATA = [
     url: "https://github.com/gitThinh/homestay_template",
     isBlank: true,
   },
-  { id: generateIds("nav_"), name: t("nav.setting"), url: "#" },
+  // { id: generateIds("nav_"), name: t("nav.setting"), url: "#" },
 ];
 
 const isShowMenu = ref(false);

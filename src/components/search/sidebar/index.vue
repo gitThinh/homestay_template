@@ -200,9 +200,9 @@ const updateSelectedFilter = (
   router.push({ query });
 };
 
-watch([selectedFilters], () => {
-  console.log(selectedFilters);
-});
+// watch([selectedFilters], () => {
+//   console.log(selectedFilters);
+// });
 </script>
 
 <style></style>

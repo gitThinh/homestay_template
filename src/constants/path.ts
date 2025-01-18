@@ -1,6 +1,8 @@
 export const PATH_PAGE = {
     root: "/",
-    contact: "/contact"
+    contact: "/contact",
+    blogList: "/blog",
+    blogDetail: (id: string) => `/blog/${id}`
 }
 
 export const PATH_AUTH = {
