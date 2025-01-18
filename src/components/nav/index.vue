@@ -10,11 +10,13 @@
     <div
       class="flex items-center justify-between p-3 lg:px-10 lg:py-5 main_container"
     >
-      <div class="space-x-3 hidden md:block">
+      <div class="space-x-5 flex-row hidden md:flex items-center">
         <!-- logo desktop -->
         <NuxtLinkLocale :to="PATH_PAGE.root">
           <h1 class="text-4xl font-bold text-neutral-50 logo_white">LOGO</h1>
         </NuxtLinkLocale>
+        <!-- navigation desktop -->
+        <NavDesktop />
       </div>
 
       <!-- logo mobile -->

@@ -67,7 +67,7 @@ const handleSubmit = () => {
 };
 
 useSeoMeta({
-  title: t("contactPage.title"),
+  title: t("contactPage.contact"),
 });
 </script>
 
